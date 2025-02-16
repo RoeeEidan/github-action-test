@@ -1,0 +1,96 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-0wtya4bVKhRH80SyQHhYTSOM.png?st=2025-02-16T21%3A45%3A41Z&se=2025-02-16T23%3A45%3A41Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T18%3A58%3A12Z&ske=2025-02-17T18%3A58%3A12Z&sks=b&skv=2024-08-04&sig=YfvjwcRN3kQY6j5s0Z80YwsAV%2BY6V3itPnN52qj6LZw%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-0wtya4bVKhRH80SyQHhYTSOM.png?st=2025-02-16T21%3A45%3A41Z&se=2025-02-16T23%3A45%3A41Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T18%3A58%3A12Z&ske=2025-02-17T18%3A58%3A12Z&sks=b&skv=2024-08-04&sig=YfvjwcRN3kQY6j5s0Z80YwsAV%2BY6V3itPnN52qj6LZw%3D
+reduction: 0
+saving: 0
+points:
+  question: 100
+  education: 300
+  upload: 100
+  completion: 100
+multipleChoice: true
+en:
+  name: Watch Greta Thunberg's TED Talk & Learn About Food Systems
+  message: Discover the pivotal role of food systems in climate action as told by
+    Greta Thunberg. 🌱 Watch her famous TED talk and understand how our food
+    choices shape the world.
+  overview: Greta Thunberg's TED talk emphasizes the urgent need for climate
+    action, and one key area in this fight is our food systems. From greenhouse
+    gas emissions to land use and freshwater consumption, food production plays
+    a monumental role in environmental health. In this challenge, you'll explore
+    the impact of our agricultural choices and learn how to make a positive
+    change.
+  question:
+    heading: Impact of Food Systems
+    description: Which of the following statements *accurately* reflect the
+      environmental impact of food systems?
+    answers:
+      a: Food production is responsible for more than a quarter of global greenhouse
+        gas emissions.
+      b: Agriculture uses half of the world's freshwater resources.
+      c: Half of the world's habitable land is used for agricultural purposes.
+      d: Agriculture is a minor contributor to freshwater contamination.
+      e: Restoring natural lands cannot help biodiversity.
+      f: Everyone has access to a sustainable and nutritious diet.
+  education:
+    heading: Learn from Greta Thunberg
+    description: Watch the TED talk to learn about the importance of climate action
+      and the role of food systems. Discover actionable insights and why food
+      choices matter.
+    link:
+      text: Watch Greta's TED Talk
+      url: https://www.ted.com/talks/greta_thunberg_school_strike_for_climate_save_the_world_by_changing_the_rules
+      popup: undefined
+  upload:
+    heading: Reflect on Your Learnings
+    description: Share a brief paragraph on what you learned from Greta's TED talk
+      about the environmental impact of our food systems and any steps you plan
+      to take to make a difference. A text file or PDF works best.
+  completion:
+    heading: Challenge Completed
+    description: Congratulations on completing the challenge! You've taken a step
+      toward understanding and improving how our food systems impact the
+      environment. Keep it going!
+fr:
+  name: Regardez le TED Talk de Greta Thunberg & apprenez sur les systèmes
+    alimentaires
+  message: Découvrez le rôle crucial des systèmes alimentaires dans l'action
+    climatique, raconté par Greta Thunberg. 🌱 Regardez son célèbre TED talk et
+    comprenez comment nos choix alimentaires façonnent le monde.
+  overview: Le TED talk de Greta Thunberg souligne l'urgence d'agir pour le
+    climat, et un domaine clé dans cette lutte est nos systèmes alimentaires. De
+    l'émission de gaz à effet de serre à l'utilisation des terres et la
+    consommation d'eau douce, la production alimentaire joue un rôle monumental
+    dans la santé environnementale. Dans ce défi, vous explorerez l'impact de
+    nos choix agricoles et apprendrez comment opérer un changement positif.
+  question:
+    heading: Impact des systèmes alimentaires
+    description: Lesquelles des affirmations suivantes *reflètent précisément*
+      l'impact environnemental des systèmes alimentaires?
+    answers:
+      a: La production alimentaire est responsable de plus d'un quart des émissions
+        mondiales de gaz à effet de serre.
+      b: L'agriculture utilise la moitié des ressources mondiales en eau douce.
+      c: La moitié des terres habitables du monde est utilisée à des fins agricoles.
+      d: L'agriculture contribue peu à la contamination des eaux douces.
+      e: Restaurer les terres naturelles ne peut pas aider à la biodiversité.
+      f: Tout le monde a accès à un régime alimentaire durable et nutritif.
+  education:
+    heading: Apprenez de Greta Thunberg
+    description: Regardez le TED talk pour en savoir plus sur l'importance de
+      l'action climatique et le rôle des systèmes alimentaires. Découvrez des
+      perspectives concrètes et pourquoi les choix alimentaires sont importants.
+    link:
+      text: Regardez le TED Talk de Greta
+      url: https://www.ted.com/talks/greta_thunberg_school_strike_for_climate_save_the_world_by_changing_the_rules
+      popup: undefined
+  upload:
+    heading: Réfléchissez à vos apprentissages
+    description: Partagez un court paragraphe sur ce que vous avez appris du TED
+      talk de Greta concernant l'impact environnemental de nos systèmes
+      alimentaires et les mesures que vous envisagez de prendre pour faire une
+      différence. Un fichier texte ou PDF fonctionne le mieux.
+  completion:
+    heading: Défi complété
+    description: Félicitations pour avoir terminé le défi! Vous avez franchi une
+      étape vers la compréhension et l'amélioration de l'impact de nos systèmes
+      alimentaires sur l'environnement. Continuez votre engagement!
