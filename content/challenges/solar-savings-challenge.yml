@@ -1,0 +1,118 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-ffQZFQnoumEloSuGh2Fn0RWa.png?st=2025-02-16T22%3A34%3A21Z&se=2025-02-17T00%3A34%3A21Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T14%3A59%3A34Z&ske=2025-02-17T14%3A59%3A34Z&sks=b&skv=2024-08-04&sig=o34j%2B9rdt/uszUBcqAG4kYmOVaSiWq/EU/lQ3IdfOOc%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-ffQZFQnoumEloSuGh2Fn0RWa.png?st=2025-02-16T22%3A34%3A21Z&se=2025-02-17T00%3A34%3A21Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T14%3A59%3A34Z&ske=2025-02-17T14%3A59%3A34Z&sks=b&skv=2024-08-04&sig=o34j%2B9rdt/uszUBcqAG4kYmOVaSiWq/EU/lQ3IdfOOc%3D
+reduction: 0
+saving: 0
+points:
+  question: 100
+  education: 400
+  upload: 100
+  completion: 100
+multipleChoice: false
+en:
+  name: Calculate Your Solar Savings Potential 🌞
+  message: Ever thought about harnessing the power of the sun to illuminate your
+    savings? Dive into our challenge to see how solar can shine on your
+    finances!
+  overview: Jump into the exciting world of solar energy! Installations not only
+    help the planet by reducing your carbon footprint but also empower you to
+    save money. With incentives popping up worldwide, now is the perfect time to
+    explore your home's solar potential. This challenge offers homeowners and
+    apartment-dwellers in the US and Canada a gateway to discovering solar
+    capacity and savings.
+  question:
+    heading: Your Solar Journey Starts Here!
+    description: What do you see as the biggest hurdle in setting up solar at your
+      home in the next few years?
+    answers:
+      a: Not quite aware of the benefits
+      b: Nothing's stopping me—I'm all set for solar!
+      c: Apartment life makes installations tricky
+      d: Worried about the affordability
+      e: Confused about the installation steps
+      f: undefined
+  education:
+    heading: Calculate and Shine!
+    description: For homeowners, there are tailored resources to decipher your
+      home's solar potential and possible savings. US residents, discover
+      Project Sunroof's magic; for Canadians, mySolar is your go-to. Apartment
+      folks, explore versatile solar solutions just for you.
+    link:
+      text: Discover Your Solar Potential
+      popup: "# Shine with Solar Assessment <br/><br/> - **US Members:** Unlock your
+        solar story with [Project Sunroof](https://sunroof.withgoogle.com/).
+        Share your location and let Google guide your way to solar dreams.
+        <br/><br/> - **CA Members:** Explore your solar horizon with mySolar.
+        Sign up [here](https://www.mysolarhome.ca/custom-solar-demo/) for a
+        tailored report. Quick and complimentary for Mammoth Climate members!
+        <br/><br/> - **Apartment Dwellers:** Dive into creative solar options
+        just for you. Check out [these
+        strategies](https://www.solarreviews.com/blog/solar-panels-for-rental-h\
+        omes-and-apartments) and capture standout ideas."
+  upload:
+    heading: Report Upload Time!
+    description: Contribute to the solar movement by sharing your insights.
+      Homeowners, please upload your Project Sunroof or mySolar report.
+      Apartment owners, present your chosen solar method with a screenshot and
+      tell us why it caught your eye. We accept PDF or png formats.
+  completion:
+    heading: Solar Success!
+    description: Bravo on completing your solar exploration! You've taken a
+      significant step towards a sustainable future and are now ready to bask in
+      solar savings success!
+fr:
+  name: Calculez votre potentiel d'économies solaires 🌞
+  message: Avez-vous déjà songé à exploiter la puissance du soleil pour illuminer
+    vos économies ? Plongez dans notre défi pour voir comment le solaire peut
+    faire briller vos finances !
+  overview: Plongez dans le monde passionnant de l'énergie solaire ! Les
+    installations contribuent non seulement à la planète en réduisant votre
+    empreinte carbone, mais elles vous permettent également d'économiser. Avec
+    des incitations apparaissant partout dans le monde, c'est le moment idéal
+    pour explorer le potentiel solaire de votre maison. Ce défi offre aux
+    propriétaires et aux résidents d'appartements aux États-Unis et au Canada
+    une porte d'entrée pour découvrir la capacité solaire et les économies
+    possibles.
+  question:
+    heading: Votre voyage solaire commence ici !
+    description: Quel est, selon vous, le plus grand obstacle à l'installation de
+      panneaux solaires chez vous dans les prochaines années ?
+    answers:
+      a: Je ne suis pas vraiment conscient des avantages
+      b: Rien ne m'arrête—je suis prêt pour le solaire !
+      c: La vie en appartement rend les installations compliquées
+      d: Inquiet du coût
+      e: Confus quant aux étapes d'installation
+      f: undefined
+  education:
+    heading: Calculez et rayonnez !
+    description: Pour les propriétaires, il existe des ressources adaptées pour
+      déchiffrer le potentiel solaire de votre maison et les économies
+      possibles. Résidents américains, découvrez la magie de Project Sunroof ;
+      pour les Canadiens, mySolar est votre référence. Les résidents
+      d'appartements, explorez des solutions solaires polyvalentes juste pour
+      vous.
+    link:
+      text: Découvrez votre potentiel solaire
+      popup: "# Rayonnez avec l'évaluation solaire<br/><br/> - **Membres US :**
+        Déverrouillez votre histoire solaire avec [Project
+        Sunroof](https://sunroof.withgoogle.com/). Partagez votre localisation
+        et laissez Google vous guider vers vos rêves solaires. <br/><br/> -
+        **Membres CA :** Explorez votre horizon solaire avec mySolar.
+        Inscrivez-vous [ici](https://www.mysolarhome.ca/custom-solar-demo/) pour
+        un rapport personnalisé. Rapide et gratuit pour les membres de Mammoth
+        Climate !<br/><br/> - **Résidents d'appartements :** Plongez dans des
+        options solaires créatives spécialement pour vous. Consultez [ces
+        stratégies](https://www.solarreviews.com/blog/solar-panels-for-rental-h\
+        omes-and-apartments) et capturez les idées marquantes."
+  upload:
+    heading: Temps de téléversement du rapport !
+    description: Contribuez au mouvement solaire en partageant vos idées.
+      Propriétaires, veuillez télécharger votre rapport Project Sunroof ou
+      mySolar. Propriétaires d'appartements, présentez votre méthode solaire
+      choisie avec une capture d'écran et dites-nous pourquoi elle vous a
+      attiré. Nous acceptons les formats PDF ou png.
+  completion:
+    heading: Succès solaire !
+    description: Bravo pour avoir terminé votre exploration solaire ! Vous avez fait
+      un pas important vers un avenir durable et êtes maintenant prêt à profiter
+      du succès des économies solaires !
