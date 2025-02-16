@@ -1,0 +1,95 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-K7zTIlVtewVxd5Zgw3pEc3oF.png?st=2025-02-16T21%3A34%3A15Z&se=2025-02-16T23%3A34%3A15Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T08%3A32%3A45Z&ske=2025-02-17T08%3A32%3A45Z&sks=b&skv=2024-08-04&sig=jk9l00llPF55k3/JMs8u/LJxx/YJk5pa7DJogapeWMQ%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-K7zTIlVtewVxd5Zgw3pEc3oF.png?st=2025-02-16T21%3A34%3A15Z&se=2025-02-16T23%3A34%3A15Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T08%3A32%3A45Z&ske=2025-02-17T08%3A32%3A45Z&sks=b&skv=2024-08-04&sig=jk9l00llPF55k3/JMs8u/LJxx/YJk5pa7DJogapeWMQ%3D
+reduction: 0
+saving: 0
+points:
+  question: 100
+  education: 200
+  upload: 100
+  completion: 100
+multipleChoice: true
+en:
+  name: Watch Greta Thunberg's TED Talk & Understand Climate Impact
+  message: Join us in learning from Greta Thunberg's inspiring TED Talk! Discover
+    the profound impact of our food systems on climate change and what steps we
+    can take to help the planet. 🍃🌍
+  overview: Greta Thunberg's TED Talk on the importance of taking climate action
+    is a must-watch for anyone interested in the environment. Our current food
+    and agriculture systems have a massive impact on global emissions, land use,
+    and freshwater resources. Understanding this helps us all make more informed
+    choices about the food we eat and the world we want to live in.
+  question:
+    heading: Reflection on Greta’s Message
+    description: After watching Greta Thunberg's TED Talk, what is your biggest
+      takeaway regarding the impact of food systems on climate change?
+    answers:
+      a: The significant role of agriculture in greenhouse gas emissions
+      b: The need for restoring natural lands and reducing agricultural land use
+      c: The overwhelming freshwater consumption by agriculture
+      d: All of the above
+      e: A personal commitment to action was inspired in me
+  education:
+    heading: Learn More about Food Systems & Climate Change
+    description: Gain more knowledge about the environmental impacts of food and
+      agriculture. Greta’s talk is just the beginning, explore more!
+    link:
+      text: Learn More
+      url: https://ourworldindata.org/environmental-impacts-of-food
+      popup: Dive into comprehensive data and insights about how our food choices
+        impact the Earth’s ecological health.
+  upload:
+    heading: Share Your Reflection
+    description: Upload a short reflection or creative piece (like a drawing or
+      poem) that portrays your understanding and thoughts after watching Greta’s
+      TED Talk. Your expression can help inspire others!
+  completion:
+    heading: Complete the Challenge
+    description: Congratulations on diving deep into understanding the profound
+      impact of our food systems on the planet through Greta’s TED Talk. Your
+      participation is a step towards climate action!
+fr:
+  name: Regardez le TED Talk de Greta Thunberg et Comprenez l'Impact Climatique
+  message: Joignez-vous à nous pour tirer des leçons inspirantes du TED Talk de
+    Greta Thunberg ! Découvrez l'impact profond de nos systèmes alimentaires sur
+    le changement climatique et quelles mesures nous pouvons prendre pour aider
+    la planète. 🍃🌍
+  overview: Le TED Talk de Greta Thunberg sur l'importance de l'action climatique
+    est incontournable pour quiconque s'intéresse à l'environnement. Nos
+    systèmes actuels de nourriture et d'agriculture ont un impact énorme sur les
+    émissions mondiales, l'utilisation des terres et les ressources en eau
+    douce. Comprendre cela nous aide tous à faire des choix plus éclairés sur la
+    nourriture que nous consommons et le monde dans lequel nous souhaitons
+    vivre.
+  question:
+    heading: Réflexion sur le Message de Greta
+    description: Après avoir regardé le TED Talk de Greta Thunberg, quel est votre
+      principal constat concernant l'impact des systèmes alimentaires sur le
+      changement climatique ?
+    answers:
+      a: Le rôle important de l'agriculture dans les émissions de gaz à effet de serre
+      b: La nécessité de restaurer les terres naturelles et de réduire l'utilisation
+        des terres agricoles
+      c: La consommation écrasante d'eau douce par l'agriculture
+      d: Tous les éléments ci-dessus
+      e: J'ai été inspiré à prendre un engagement personnel pour agir
+  education:
+    heading: En savoir plus sur les Systèmes Alimentaires et le Changement Climatique
+    description: Acquérir plus de connaissances sur les impacts environnementaux de
+      la nourriture et de l'agriculture. Le discours de Greta n'est que le
+      début, explorez davantage !
+    link:
+      text: En savoir plus
+      url: https://ourworldindata.org/environmental-impacts-of-food
+      popup: Plongez dans des données complètes et des insights sur comment nos choix
+        alimentaires impactent la santé écologique de la Terre.
+  upload:
+    heading: Partagez votre Réflexion
+    description: Téléchargez une courte réflexion ou une pièce créative (comme un
+      dessin ou un poème) qui illustre votre compréhension et vos pensées après
+      avoir regardé le TED Talk de Greta. Votre expression peut inspirer les
+      autres !
+  completion:
+    heading: Compléter le Défi
+    description: Félicitations pour avoir profondément exploré l'impact important de
+      nos systèmes alimentaires sur la planète grâce au TED Talk de Greta. Votre
+      participation est un pas vers l'action climatique !
