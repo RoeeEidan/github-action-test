@@ -40,11 +40,11 @@ The AI must produce a `Lesson` object that matches the following JSON structure:
 
 ### Example Output:
 
-```typescript
+```json
 {
   "handle": "public-transit-for-all",
   "heading": "Washington D.C. passes a landmark law",
-  "body": "Washington D.C. has passed a landmark zero-fare bus bill, making it the largest U.S. city to implement a fare-free transit system. This would not only benefit residents but would also contribute to a more sustainable future. <br/> <br/>Under the [new program](https://www.cnbc.com/2023/01/30/dc-free-bus-bill-becomes-law-zero-fare-transit.html), passengers can board Metrobuses without using a SmarTrip card. It would have a positive impact on residents, including reducing financial burdens and improving access for lower-income individuals, and would encourage more people to choose public transportation over private vehicles.  <br/> <br/>By eliminating fares, Washington D.C. aims to decrease traffic congestion and air pollution, ultimately working towards a greener and more sustainable urban environment 🚏",
+  "body": "Washington D.C. has passed a landmark zero-fare bus bill, making it the largest U.S. city to implement a fare-free transit system. This would not only benefit residents but would also contribute to a more sustainable future. \n\nUnder the [new program](https://www.cnbc.com/2023/01/30/dc-free-bus-bill-becomes-law-zero-fare-transit.html), passengers can board Metrobuses without using a SmarTrip card. It would have a positive impact on residents, including reducing financial burdens and improving access for lower-income individuals, and would encourage more people to choose public transportation over private vehicles.  \n\nBy eliminating fares, Washington D.C. aims to decrease traffic congestion and air pollution, ultimately working towards a greener and more sustainable urban environment 🚏",
   "message": {
     "heading": "Coming at you hot with today's #climatenews! 🚨",
     "body": "Washington D.C. joins the growing movement towards free public transit systems nationwide."
