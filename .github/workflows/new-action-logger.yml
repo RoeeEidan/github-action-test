@@ -29,19 +29,20 @@ jobs:
       - name: Run Build
         run: yarn build
 
-      - name: Determine Label and Run Script (Fix Syntax Error)
+      - name: Determine Label and Run Script
         id: get_label
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         shell: bash
         run: |
+          set -e  # Fail the step if any command fails
           LABEL=$(echo "${{ join(github.event.issue.labels.*.name, ',') }}" | grep -oE 'ChatGPT:[^,]*' | head -n1 | cut -d':' -f2 || true)
           echo "LABEL=$LABEL" >> $GITHUB_ENV
           SAFE_TITLE=$(echo "${{ github.event.issue.title }}" | sed 's/\"/\\\"/g')
           SAFE_BODY=$(echo "${{ github.event.issue.body }}" | sed 's/\"/\\\"/g')
-          CONTEXT="# $SAFE_TITLE\n\\n$SAFE_BODY"
+          CONTEXT="# $SAFE_TITLE \n\n$SAFE_BODY"
           echo "Running: yarn $LABEL with context"
-          exec yarn "$LABEL" -- "$CONTEXT"
+          yarn "$LABEL" -- "$CONTEXT"
 
       - name: Create and Switch to New Branch
         run: |
