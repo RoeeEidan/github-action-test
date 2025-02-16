@@ -35,6 +35,9 @@ export async function challenge(context: string) {
     const multipleChoice = question.multipleChoice
     
     const en: any = { ...englishChallenge }
+    delete en.handle
+    delete en.reduction
+    delete en.saving
     delete en.question.points
     delete en.question.multipleChoice
     delete en.education.points
@@ -42,6 +45,9 @@ export async function challenge(context: string) {
     delete en.completion.points
 
     const fr: any = { ...frenchChallenge }
+    delete fr.handle
+    delete fr.reduction
+    delete fr.saving
     delete fr.question.points
     delete fr.question.multipleChoice
     delete fr.education.points
