@@ -1,0 +1,103 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-t5OzITVZvRup8p5L1DvrYcW3.png?st=2025-02-16T21%3A30%3A07Z&se=2025-02-16T23%3A30%3A07Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T11%3A08%3A27Z&ske=2025-02-17T11%3A08%3A27Z&sks=b&skv=2024-08-04&sig=pFYEDP%2BUR6eHpV5WXE5xlAHSKCwP/vMUR%2BqYHvDbG/Q%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-t5OzITVZvRup8p5L1DvrYcW3.png?st=2025-02-16T21%3A30%3A07Z&se=2025-02-16T23%3A30%3A07Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T11%3A08%3A27Z&ske=2025-02-17T11%3A08%3A27Z&sks=b&skv=2024-08-04&sig=pFYEDP%2BUR6eHpV5WXE5xlAHSKCwP/vMUR%2BqYHvDbG/Q%3D
+reduction: 0
+saving: 0
+points:
+  question: 100
+  education: 400
+  upload: 100
+  completion: 100
+multipleChoice: false
+en:
+  name: Discover the Importance of Climate Action with Greta Thunberg
+  message: Join Greta Thunberg and explore why climate action is crucial! Watch
+    her TED talk to understand the importance of transforming our food and
+    agriculture systems.
+  overview: For millennia, humans have reshaped Earth's terrain to suit
+    agricultural needs, which has led to significant environmental changes. This
+    challenge encourages you to explore how these activities contribute to
+    climate change and how transforming food and agriculture systems can play a
+    pivotal role in addressing environmental issues. By watching Greta
+    Thunberg's famous TED talk, you'll gain insights into the urgency of climate
+    action.
+  question:
+    heading: Your thoughts on climate action and food systems
+    description: After watching Greta's TED talk, what do you think is the most
+      pressing reason for transforming our food and agriculture systems?
+    answers:
+      a: Reducing greenhouse gas emissions
+      b: Restoring natural habitats and biodiversity
+      c: Conserving freshwater resources
+      d: Ensuring access to sustainable diets
+      e: All of the above
+      f: I'm not sure yet!
+  education:
+    heading: Watch Greta Thunberg's TED Talk
+    description: Immerse yourself in Greta Thunberg's compelling TED talk to
+      understand the pressing need for climate action, particularly in reforming
+      our food and agriculture systems. Learn about the environmental impacts of
+      food production and how change in this sector can significantly contribute
+      to global ecological health.
+    link:
+      text: Watch Greta's TED Talk
+      url: https://www.ted.com/talks/greta_thunberg_the_disarming_case_to_act_right_now_on_climate
+      popup: undefined
+  upload:
+    heading: Share your reflection
+    description: After watching the TED talk, write a brief reflection on how you
+      feel about the importance of transforming our food and agriculture systems
+      in combating climate change. Upload your reflection as a text file or a
+      short video. Be sure to highlight any insights or personal actions you
+      might consider taking.
+  completion:
+    heading: Complete the challenge
+    description: You've watched Greta's TED talk and shared your reflections on
+      climate action. Congratulations on completing this enlightening challenge!
+fr:
+  name: Découvrez l'importance de l'action climatique avec Greta Thunberg
+  message: Rejoignez Greta Thunberg et découvrez pourquoi l'action climatique est
+    cruciale ! Regardez son TED talk pour comprendre l'importance de transformer
+    nos systèmes alimentaires et agricoles.
+  overview: Pendant des millénaires, les humains ont modifié le terrain de la
+    Terre pour répondre aux besoins agricoles, ce qui a entraîné des changements
+    environnementaux significatifs. Ce défi vous encourage à explorer comment
+    ces activités contribuent au changement climatique et comment transformer
+    les systèmes alimentaires et agricoles peut jouer un rôle essentiel dans la
+    résolution des problèmes environnementaux. En regardant le célèbre TED talk
+    de Greta Thunberg, vous comprendrez l'urgence de l'action climatique.
+  question:
+    heading: Vos réflexions sur l'action climatique et les systèmes alimentaires
+    description: Après avoir regardé le TED talk de Greta, quelle est selon vous la
+      raison la plus urgente de transformer nos systèmes alimentaires et
+      agricoles ?
+    answers:
+      a: Réduire les émissions de gaz à effet de serre
+      b: Restaurer les habitats naturels et la biodiversité
+      c: Conserver les ressources en eau douce
+      d: Assurer l'accès à des régimes alimentaires durables
+      e: Tout ce qui précède
+      f: Je ne suis pas encore sûr !
+  education:
+    heading: Regardez le TED Talk de Greta Thunberg
+    description: Plongez-vous dans le TED talk captivant de Greta Thunberg pour
+      comprendre le besoin urgent d'action climatique, en particulier pour
+      réformer nos systèmes alimentaires et agricoles. Apprenez-en plus sur les
+      impacts environnementaux de la production alimentaire et sur la façon dont
+      les changements dans ce secteur peuvent contribuer de manière
+      significative à la santé écologique mondiale.
+    link:
+      text: Regardez le TED Talk de Greta
+      url: https://www.ted.com/talks/greta_thunberg_the_disarming_case_to_act_right_now_on_climate
+      popup: undefined
+  upload:
+    heading: Partagez votre réflexion
+    description: Après avoir regardé le TED talk, rédigez une brève réflexion sur
+      l'importance de transformer nos systèmes alimentaires et agricoles pour
+      lutter contre le changement climatique. Téléchargez votre réflexion sous
+      forme de fichier texte ou de courte vidéo. Assurez-vous de mettre en avant
+      toute idée ou action personnelle que vous pourriez envisager.
+  completion:
+    heading: Complétez le défi
+    description: Vous avez regardé le TED talk de Greta et partagé vos réflexions
+      sur l'action climatique. Félicitations d'avoir complété ce défi
+      enrichissant !
