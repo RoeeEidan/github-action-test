@@ -29,16 +29,13 @@ jobs:
       - name: Run Build
         run: yarn build
 
-      - name: Run Script Based on Label with Context and Env
-        id: run_script
+      - name: Determine Label and Run Script
+        id: get_label
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           LABEL=$(echo "${{ join(github.event.issue.labels.*.name, ',') }}" | grep -oE 'ChatGPT:[^,]*' | head -n1 | cut -d':' -f2)
-          if [ -z "$LABEL" ]; then
-            echo "No matching ChatGPT label found."
-            exit 1
-          fi
+          echo "LABEL=$LABEL" >> $GITHUB_ENV
           CONTEXT="# ${{ github.event.issue.title }}\n\n${{ github.event.issue.body }}"
           echo "Running: yarn $LABEL with context"
           yarn "$LABEL" -- "$CONTEXT"
@@ -58,8 +55,10 @@ jobs:
           github-token: ${{ secrets.PAT_TOKEN }}
           script: |
             const issueNumber = ${{ github.event.issue.number }};
-            const prTitle = `Resolve issue #${issueNumber}`;
-            const prBody = `This PR resolves issue #${issueNumber}.\n\nresolves #${issueNumber}`;
+            const issueTitle = ${{ github.event.issue.title }};
+            const label = process.env.LABEL || 'content';
+            const prTitle = `ChatGPT: Create new ${label} -- ${issueTitle} (#${issueNumber})`;
+            const prBody = `Resolves #${issueNumber}\n\nCreated by ChatGPT\n\nDeploy to staging by commenting 'stageit' on this PR.`;
             const response = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
