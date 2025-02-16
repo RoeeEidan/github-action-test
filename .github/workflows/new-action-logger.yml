@@ -29,18 +29,19 @@ jobs:
       - name: Run Build
         run: yarn build
 
-      - name: Determine Label and Run Script
+      - name: Determine Label and Run Script (Fix Syntax Error)
         id: get_label
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        shell: bash
         run: |
-          LABEL=$(echo "${{ join(github.event.issue.labels.*.name, ',') }}" | grep -oE 'ChatGPT:[^,]*' | head -n1 | cut -d':' -f2)
+          LABEL=$(echo "${{ join(github.event.issue.labels.*.name, ',') }}" | grep -oE 'ChatGPT:[^,]*' | head -n1 | cut -d':' -f2 || true)
           echo "LABEL=$LABEL" >> $GITHUB_ENV
           SAFE_TITLE=$(echo "${{ github.event.issue.title }}" | sed 's/\"/\\\"/g')
           SAFE_BODY=$(echo "${{ github.event.issue.body }}" | sed 's/\"/\\\"/g')
-          CONTEXT="# $SAFE_TITLE\n\n$SAFE_BODY"
+          CONTEXT="# $SAFE_TITLE\n\\n$SAFE_BODY"
           echo "Running: yarn $LABEL with context"
-          yarn "$LABEL" -- "$CONTEXT"
+          exec yarn "$LABEL" -- "$CONTEXT"
 
       - name: Create and Switch to New Branch
         run: |
@@ -60,7 +61,7 @@ jobs:
             const issueTitle = `${{ github.event.issue.title }}`.replace(/"/g, '\\"');
             const label = process.env.LABEL || 'content';
             const prTitle = `ChatGPT: Create new ${label} -- ${issueTitle} (#${issueNumber})`;
-            const prBody = `Resolves #${issueNumber}\n\nCreated by ChatGPT\n\nDeploy to staging by commenting 'stageit' on this PR.`;
+            const prBody = `Resolves #${issueNumber}\\n\\nCreated by ChatGPT\\n\\nDeploy to staging by commenting 'stageit' on this PR.`;
             const response = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
