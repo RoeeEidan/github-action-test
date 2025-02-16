@@ -73,8 +73,8 @@ const schema = {
 export default async function generate<T extends keyof typeof schema>(key: T, input: string): Promise<z.infer<typeof schema[T]>> {
     const start = new Date()
     console.log(`Generating ${key}....`)
-    const instructions = Handlebars.compile(await readMd(`assistants/${key}/instructions.md`))({ input });
-    const prompt = Handlebars.compile(await readMd(`assistants/${key}/prompt.md`))({ input });
+    const instructions = Handlebars.compile(await readMd(`${__dirname}/../../src/assistants/${key}/instructions.md`))({ input });
+    const prompt = Handlebars.compile(await readMd(`${__dirname}/../../src/assistants/${key}/prompt.md`))({ input });
     const res = await query(instructions, prompt);
     console.log(`Generated ${key}, took ${(new Date().getTime() - start.getTime()) / 1000}s`)
     return schema[key].parse(JSON.parse(res.choices[0].message.content as string))

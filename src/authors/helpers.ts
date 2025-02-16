@@ -2,7 +2,7 @@ import fs from 'fs';
 import YAML from 'yaml'
 
 export const createFolder = (folder: string): Promise<void> => new Promise((resolve, reject) => {
-    fs.mkdir(`${__dirname}/${folder}`, (err) => {
+    fs.mkdir(folder, (err) => {
         if (err) {
             reject(err);
         }
@@ -11,7 +11,7 @@ export const createFolder = (folder: string): Promise<void> => new Promise((reso
 });
 
 export const writeMd = (filename: string, data: string): Promise<void> => new Promise((resolve, reject) => {
-    fs.writeFile(`${__dirname}/${filename}`, data, (err) => {
+    fs.writeFile(filename, data, (err) => {
         if (err) {
             reject(err);
         }
@@ -20,7 +20,7 @@ export const writeMd = (filename: string, data: string): Promise<void> => new Pr
 });
 
 export const readMd = (filename: string): Promise<string> => new Promise((resolve, reject) => {
-    fs.readFile(`${__dirname}/${filename}`, 'utf8', (err, data) => {
+    fs.readFile(filename, 'utf8', (err, data) => {
         if (err) {
             reject(err);
         }
@@ -29,7 +29,7 @@ export const readMd = (filename: string): Promise<string> => new Promise((resolv
 });
 
 export const writeYml = (filename: string, data: any): Promise<void> => new Promise((resolve, reject) => {
-    fs.writeFile(`${__dirname}/${filename}`, YAML.stringify(data), (err) => {
+    fs.writeFile(filename, YAML.stringify(data), (err) => {
         if (err) {
             reject(err);
         }
