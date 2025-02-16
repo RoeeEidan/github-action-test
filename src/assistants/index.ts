@@ -43,8 +43,8 @@ const challenge = z.object({
         description: z.string(),
         link: z.object({
             text: z.string(),
-            url: z.string().optional(),
-            popup: z.string().optional()
+            url: z.string().optional().nullable(),
+            popup: z.string().optional().nullable()
         })
     }),
     upload: z.object({
