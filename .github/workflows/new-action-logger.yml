@@ -36,7 +36,9 @@ jobs:
         run: |
           LABEL=$(echo "${{ join(github.event.issue.labels.*.name, ',') }}" | grep -oE 'ChatGPT:[^,]*' | head -n1 | cut -d':' -f2)
           echo "LABEL=$LABEL" >> $GITHUB_ENV
-          CONTEXT="# ${{ github.event.issue.title }}\n\n${{ github.event.issue.body }}"
+          SAFE_TITLE=$(echo "${{ github.event.issue.title }}" | sed 's/\"/\\\"/g')
+          SAFE_BODY=$(echo "${{ github.event.issue.body }}" | sed 's/\"/\\\"/g')
+          CONTEXT="# $SAFE_TITLE\n\n$SAFE_BODY"
           echo "Running: yarn $LABEL with context"
           yarn "$LABEL" -- "$CONTEXT"
 
@@ -55,10 +57,10 @@ jobs:
           github-token: ${{ secrets.PAT_TOKEN }}
           script: |
             const issueNumber = ${{ github.event.issue.number }};
-            const issueTitle = "${{ github.event.issue.title }}";
+            const issueTitle = `${{ github.event.issue.title }}`.replace(/"/g, '\\"');
             const label = process.env.LABEL || 'content';
             const prTitle = `ChatGPT: Create new ${label} -- ${issueTitle} (#${issueNumber})`;
-            const prBody = `Resolves #28 _(Created by ChatGPT)_ \n\nDeploy the new challenge to staging by commenting \`stageit\` on this PR.`;
+            const prBody = `Resolves #${issueNumber}\n\nCreated by ChatGPT\n\nDeploy to staging by commenting 'stageit' on this PR.`;
             const response = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -69,7 +71,6 @@ jobs:
             });
             console.log(`PR created: ${response.data.html_url}`);
 
-            // Add labels to the PR matching the issue's labels
             const issueLabels = ${{ toJson(github.event.issue.labels.*.name) }};
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
@@ -78,7 +79,6 @@ jobs:
               labels: issueLabels
             });
 
-            // If issue creator is not RoeeEidan, assign the issue creator as reviewer
             const creator = '${{ github.event.issue.user.login }}';
             if (creator !== 'RoeeEidan') {
               await github.rest.pulls.requestReviewers({
