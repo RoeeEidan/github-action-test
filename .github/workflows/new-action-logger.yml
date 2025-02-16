@@ -58,7 +58,7 @@ jobs:
             const issueTitle = "${{ github.event.issue.title }}";
             const label = process.env.LABEL || 'content';
             const prTitle = `ChatGPT: Create new ${label} -- ${issueTitle} (#${issueNumber})`;
-            const prBody = `Resolves #${issueNumber}\n\nCreated by ChatGPT\n\nDeploy to staging by commenting 'stageit' on this PR.`;
+            const prBody = `Resolves #28 _(Created by ChatGPT)_ \n\nDeploy the new challenge to staging by commenting \`stageit\` on this PR.`;
             const response = await github.rest.pulls.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
