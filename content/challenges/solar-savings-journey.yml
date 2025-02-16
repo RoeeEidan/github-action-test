@@ -1,0 +1,99 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-M6XR1wNd7QwgI1mmtj7GCKQq.png?st=2025-02-16T22%3A25%3A10Z&se=2025-02-17T00%3A25%3A10Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T04%3A30%3A03Z&ske=2025-02-17T04%3A30%3A03Z&sks=b&skv=2024-08-04&sig=TrcNwDdKIjn34zbfVz9cY0c1u6sL2QHFUzOA%2BACmQXY%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-M6XR1wNd7QwgI1mmtj7GCKQq.png?st=2025-02-16T22%3A25%3A10Z&se=2025-02-17T00%3A25%3A10Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T04%3A30%3A03Z&ske=2025-02-17T04%3A30%3A03Z&sks=b&skv=2024-08-04&sig=TrcNwDdKIjn34zbfVz9cY0c1u6sL2QHFUzOA%2BACmQXY%3D
+reduction: 0
+saving: 0
+points:
+  question: 100
+  education: 400
+  upload: 100
+  completion: 100
+multipleChoice: false
+en:
+  name: Embark on Your Solar Savings Journey!
+  message: Curious about going solar? Discover your home's solar potential and
+    start saving on energy costs with our fun solar challenge!
+  overview: Solar panels can help reduce your carbon footprint while saving on
+    your energy bills. Many countries offer incentives to make the switch
+    easier. Whether you're a homeowner or an apartment dweller, this challenge
+    offers you the tools to calculate your home's solar capacity and potential
+    savings. Start your solar journey today!
+  question:
+    heading: Your Solar Readiness
+    description: What's the biggest hurdle for you when it comes to setting up solar
+      at home?
+    answers:
+      a: Lack of understanding of the benefits
+      b: None, I’m ready to set-up solar at home!
+      c: I live in an apartment, so solar installation can be complex
+      d: Cost and affordability
+      e: Lack of understanding of the installation process
+      f: ""
+  education:
+    heading: Find Your Solar Potential
+    description: Unlock the potential of solar energy for your home with our
+      tailored resources! US and CA homeowners, use our tools to calculate solar
+      savings. Apartment residents, explore innovative solar options!
+    link:
+      text: Explore Solar Options
+      popup: >-
+        # Unleash Your Solar Potential! 
+
+         - **US Members:** Visit [Project Sunroof](https://sunroof.withgoogle.com/) by Google. Simply enter your address to discover your roof's solar possibilities.
+         - **CA Members:** Check out [mySolar's Solar Report](https://www.mysolarhome.ca/custom-solar-demo/). Provide initial details to receive a free comprehensive report from the mySolar team.
+         - **Apartment Dwellers:** Dive into our guide on [solar solutions for apartments](https://www.solarreviews.com/blog/solar-panels-for-rental-homes-and-apartments). Screenshot your preferred method to share.
+  upload:
+    heading: Showcase Your Solar Insights
+    description: Share your findings by uploading your solar report or a screenshot
+      from your exploration. Tell us about your journey toward solar adoption
+      and what excites you the most!
+  completion:
+    heading: Complete Your Solar Challenge
+    description: Congratulations on completing your solar assessment! You're now
+      equipped with valuable insights to embrace solar energy for a sustainable
+      future!
+fr:
+  name: Embarquez dans Votre Aventure d'Économies Solaires!
+  message: Vous êtes curieux de passer au solaire? Découvrez le potentiel solaire
+    de votre maison et commencez à économiser sur vos coûts énergétiques avec
+    notre défi solaire ludique!
+  overview: Les panneaux solaires peuvent réduire votre empreinte carbone tout en
+    diminuant vos factures d'énergie. De nombreux pays offrent des incitations
+    pour faciliter la transition. Que vous soyez propriétaire ou locataire, ce
+    défi vous offre les outils pour calculer la capacité solaire de votre
+    domicile et les économies potentielles. Commencez votre aventure solaire dès
+    aujourd'hui!
+  question:
+    heading: Votre Préparation au Solaire
+    description: Quel est le plus grand obstacle pour vous lorsqu'il s'agit
+      d'installer du solaire chez vous?
+    answers:
+      a: Manque de compréhension des avantages
+      b: Aucun, je suis prêt à installer du solaire chez moi!
+      c: Je vis dans un appartement, donc l'installation solaire peut être complexe
+      d: Coût et accessibilité
+      e: Manque de compréhension du processus d'installation
+      f: ""
+  education:
+    heading: Découvrez Votre Potentiel Solaire
+    description: Déverrouillez le potentiel de l'énergie solaire pour votre domicile
+      avec nos ressources sur mesure! Les propriétaires aux États-Unis et au
+      Canada, utilisez nos outils pour calculer les économies solaires. Les
+      résidents d'appartements, explorez des options solaires innovantes!
+    link:
+      text: Explorez les Options Solaires
+      popup: >-
+        # Libérez Votre Potentiel Solaire! 
+
+         - **Membres US:** Visitez [Project Sunroof](https://sunroof.withgoogle.com/) de Google. Entrez simplement votre adresse pour découvrir les possibilités solaires de votre toit.
+         - **Membres CA:** Consultez le [Rapport Solaire de mySolar](https://www.mysolarhome.ca/custom-solar-demo/). Fournissez des détails initiaux pour recevoir un rapport complet gratuit de l'équipe mySolar.
+         - **Résidents d'appartements:** Plongez dans notre guide sur [les solutions solaires pour appartements](https://www.solarreviews.com/blog/solar-panels-for-rental-homes-and-apartments). Capturez en capture d'écran votre méthode préférée pour partager.
+  upload:
+    heading: Présentez Vos Perspectives Solaires
+    description: Partagez vos découvertes en téléchargeant votre rapport solaire ou
+      une capture d'écran de votre exploration. Parlez-nous de votre cheminement
+      vers l'adoption du solaire et de ce qui vous enthousiasme le plus!
+  completion:
+    heading: Complétez Votre Défi Solaire
+    description: Félicitations pour avoir complété votre évaluation solaire! Vous
+      êtes maintenant équipé d'informations précieuses pour adopter l'énergie
+      solaire pour un avenir durable!
