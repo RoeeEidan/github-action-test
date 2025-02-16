@@ -1,0 +1,146 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-i6H4ksufFQMfrTxYvw4RI7uv.png?st=2025-02-16T22%3A01%3A53Z&se=2025-02-17T00%3A01%3A53Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T10%3A56%3A45Z&ske=2025-02-17T10%3A56%3A45Z&sks=b&skv=2024-08-04&sig=qCNUhcCjNK8vhiB43cFzrhWijIjPoKitayfVvZzJkLk%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-i6H4ksufFQMfrTxYvw4RI7uv.png?st=2025-02-16T22%3A01%3A53Z&se=2025-02-17T00%3A01%3A53Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T10%3A56%3A45Z&ske=2025-02-17T10%3A56%3A45Z&sks=b&skv=2024-08-04&sig=qCNUhcCjNK8vhiB43cFzrhWijIjPoKitayfVvZzJkLk%3D
+reduction: 0
+saving: 0
+points:
+  question: 100
+  education: 400
+  upload: 100
+  completion: 100
+multipleChoice: false
+en:
+  name: Calculate your home’s solar capacity and potential savings
+  message: Installing solar panels reduces your carbon footprint and saves money
+    in the long term. Many countries offer incentives, and calculating your
+    home's solar potential is a great first step.
+  overview: Installing solar panels is one of the most effective ways to reduce
+    your carbon footprint and save money in the long run. Luckily, many
+    countries and communities have recently rolled out financial incentives to
+    support the transition for homeowners. This challenge helps US and Canadian
+    homeowners and apartment dwellers to take the first step towards
+    understanding the installation of solar at home, by calculating your home’s
+    solar capacity and potential cost savings. Once solar assessment services
+    become available for other countries, they will be included as well.
+  question:
+    heading: Your interest in solar
+    description: What is the biggest barrier for you to set up solar at your home in
+      the coming years?
+    answers:
+      a: Lack of understanding of the benefits
+      b: None, I’m ready to set-up solar at home!
+      c: I live in an apartment, so solar installation can be complex
+      d: Cost and affordability
+      e: Lack of understanding of the installation process
+  education:
+    heading: Calculate capacity and savings
+    description: If you live in a home, we’ve compiled two resources that will help
+      you to better understand your home’s solar capacity and potential cost
+      savings. For US homeowners, please use the Project Sunroof resource. For
+      CA homeowners, please use the mySolar link. <br/> <br/>If you're not a
+      homeowner and live in an apartment, have no fear! We've provided a
+      resource to help you understand 4 different ways that you can implement
+      solar for your apartment.
+    link:
+      text: Calculate capacity & savings
+      popup: "# Calculate solar capacity & savings <br/> <br/> - **US Members:** Click
+        [here](https://sunroof.withgoogle.com/) to complete your Project Sunroof
+        assessment by simply providing your address. Project Sunroof was
+        developed by Google, and helps US citizens to map their roof’s solar
+        savings and potential. Once complete, take a screenshot of the report.
+        Time to complete is one minute. <br/> <br/> - **CA Members:** Click
+        [here](https://www.mysolarhome.ca/custom-solar-demo/) to access
+        mySolar’s Solar Report. mySolar is a Canadian-based company that offers
+        a similar service for Canadian citizens as Project Sunroof. You will
+        need to provide your name, email, phone number, and city, at which point
+        mySolar will reach out to you to provide a thorough report. Time to
+        complete is minimal, but will require contact with the mySolar team. The
+        mySolar team is providing this service for free for all Mammoth Climate
+        members.<br/> <br/> - **Apartment Owners:** Click
+        [here](https://www.solarreviews.com/blog/solar-panels-for-rental-homes-\
+        and-apartments) to explore 4 potential ways that you can implement solar
+        in your apartment. Be sure to take a screenshot from the article of the
+        method that your are most interested in."
+  upload:
+    heading: Upload your report
+    description: If you live in a home and have received a solar report from Project
+      Sunroof or MySolar, upload your report for verification that you have
+      completed this challenge. <br/> <br/>If you are an apartment owner, upload
+      a screenshot from the article of the method of solar installation that you
+      are most interested in, and provide a comment as to why.<br/> <br/>PDF or
+      png files work best.
+  completion:
+    heading: Complete challenge
+    description: Now that you’ve completed your solar assessment, you’re all set to
+      complete the challenge!
+fr:
+  name: Calculez la capacité solaire de votre domicile et les économies potentielles
+  message: L'installation de panneaux solaires réduit votre empreinte carbone et
+    vous permet d'économiser de l'argent à long terme. De nombreux pays offrent
+    des incitatifs, et calculer le potentiel solaire de votre maison est une
+    excellente première étape.
+  overview: L'installation de panneaux solaires est l'un des moyens les plus
+    efficaces de réduire votre empreinte carbone et de faire des économies à
+    long terme. Heureusement, de nombreux pays et communautés ont récemment
+    lancé des incitatifs financiers pour soutenir la transition des
+    propriétaires. Ce défi aide les propriétaires américains et canadiens ainsi
+    que les résidents d'appartements à faire le premier pas pour comprendre
+    l'installation solaire à domicile, en calculant la capacité solaire de votre
+    maison et les économies potentielles. Dès que des services d'évaluation
+    solaire seront disponibles pour d'autres pays, ils seront également inclus.
+  question:
+    heading: Votre intérêt pour le solaire
+    description: Quel est le plus grand obstacle pour vous à installer des panneaux
+      solaires chez vous dans les années à venir ?
+    answers:
+      a: Manque de compréhension des avantages
+      b: Aucun, je suis prêt à installer des panneaux solaires chez moi !
+      c: Je vis dans un appartement, donc l'installation solaire peut être complexe
+      d: Coût et accessibilité
+      e: Manque de compréhension du processus d'installation
+  education:
+    heading: Calculer la capacité et les économies
+    description: Si vous vivez dans une maison, nous avons compilé deux ressources
+      qui vous aideront à mieux comprendre la capacité solaire de votre domicile
+      et les économies potentielles. Pour les propriétaires américains, veuillez
+      utiliser la ressource Project Sunroof. Pour les propriétaires canadiens,
+      veuillez utiliser le lien mySolar.<br/> <br/>Si vous n'êtes pas
+      propriétaire et que vous vivez dans un appartement, ne vous inquiétez pas
+      ! Nous avons fourni une ressource pour vous aider à comprendre 4 façons
+      différentes d'implanter le solaire pour votre appartement.
+    link:
+      text: Calculer la capacité et les économies
+      popup: "# Calculer la capacité solaire et les économies<br/> <br/> - **Membres
+        américains :** Cliquez [ici](https://sunroof.withgoogle.com/) pour
+        compléter votre évaluation Project Sunroof en fournissant simplement
+        votre adresse. Project Sunroof a été développé par Google et aide les
+        citoyens américains à cartographier les économies solaires et le
+        potentiel de leur toit. Une fois terminé, prenez une capture d'écran du
+        rapport. Le temps nécessaire pour faire cela est d'une minute.<br/>
+        <br/> - **Membres canadiens :** Cliquez
+        [ici](https://www.mysolarhome.ca/custom-solar-demo/) pour accéder au
+        rapport solaire de mySolar. mySolar est une entreprise canadienne qui
+        offre un service similaire pour les citoyens canadiens tel que Project
+        Sunroof. Vous devrez fournir votre nom, votre adresse e-mail, votre
+        numéro de téléphone et votre ville, à partir de quoi mySolar vous
+        contactera pour fournir un rapport détaillé. Le temps nécessaire pour
+        faire cela est minime, mais nécessitera un contact avec l'équipe
+        mySolar. L'équipe mySolar offre ce service gratuitement à tous les
+        membres de Mammoth Climate.<br/> <br/> - **Propriétaires d'appartements
+        :** Cliquez
+        [ici](https://www.solarreviews.com/blog/solar-panels-for-rental-homes-a\
+        nd-apartments) pour explorer 4 façons potentielles d'implanter le
+        solaire dans votre appartement. N'oubliez pas de prendre une capture
+        d'écran de l'article de la méthode qui vous intéresse le plus."
+  upload:
+    heading: Téléchargez votre rapport
+    description: Si vous vivez dans une maison et avez reçu un rapport solaire de
+      Project Sunroof ou MySolar, téléchargez votre rapport pour vérification
+      que vous avez complété ce défi.<br/> <br/>Si vous êtes propriétaire d'un
+      appartement, téléchargez une capture d'écran de l'article de la méthode
+      d'installation solaire qui vous intéresse le plus et fournissez un
+      commentaire expliquant pourquoi.<br/> <br/>Les fichiers PDF ou PNG
+      fonctionnent le mieux.
+  completion:
+    heading: Terminer le défi
+    description: Maintenant que vous avez terminé votre évaluation solaire, vous
+      êtes prêt(e) à compléter le défi !
