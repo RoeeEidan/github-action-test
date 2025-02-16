@@ -28,7 +28,7 @@ export async function lesson(context: string) {
         throw new Error('The handles of the lessons do not match')
     }
 
-    await writeYml(`../content/lessons/${enHanhle}.yml`, {
+    await writeYml(`${__dirname}/../../content/lessons/${enHanhle}.yml`, {
         cardImageUrl,
         heroImageUrl,
         en: enRest,
