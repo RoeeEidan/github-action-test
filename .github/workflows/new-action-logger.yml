@@ -48,7 +48,7 @@ jobs:
           git commit -m "Create AI content for issue #${{ github.event.issue.number }}"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git $BRANCH_NAME
 
-      - name: Create Pull Request
+      - name: Create Pull Request with Label and Reviewer
         id: create_pr
         uses: actions/github-script@v7
         with:
@@ -68,6 +68,28 @@ jobs:
               body: prBody
             });
             console.log(`PR created: ${response.data.html_url}`);
+
+            // Add labels to the PR matching the issue's labels
+            const issueLabels = ${{ toJson(github.event.issue.labels.*.name) }};
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: response.data.number,
+              labels: issueLabels
+            });
+
+            // If issue creator is not RoeeEidan, assign the issue creator as reviewer
+            const creator = '${{ github.event.issue.user.login }}';
+            if (creator !== 'RoeeEidan') {
+              await github.rest.pulls.requestReviewers({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: response.data.number,
+                reviewers: [creator]
+              });
+              console.log(`${creator} assigned as reviewer.`);
+            }
+
             return response.data.number;
 
       - name: Assign Issue Creator to PR
