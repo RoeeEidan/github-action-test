@@ -1,4 +1,4 @@
-// import { lesson } from "../authors/lesson";
+import { lesson } from "../authors/lesson";
 import yargs from 'yargs';
 
 if (!process.env.OPENAI_API_KEY) {
@@ -15,8 +15,7 @@ async function main() {
         .help()
         .parseSync();
 
-    console.log(argv.context)
-    // await lesson(argv.context)
+    await lesson(argv.context)
 }
 
 

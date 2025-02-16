@@ -11,8 +11,7 @@ permissions:
 
 jobs:
   create-pr:
-    if: >
-      contains(join(github.event.issue.labels.*.name, ','), 'ChatGPT:')
+    if: contains(join(github.event.issue.labels.*.name, ','), 'ChatGPT:')
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +24,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Install Dependencies
-        run: yarn install 
+        run: yarn install
 
       - name: Run Build
         run: yarn build
@@ -40,12 +39,13 @@ jobs:
             echo "No matching ChatGPT label found."
             exit 1
           fi
+          CONTEXT="# ${{ github.event.issue.title }}\n\n${{ github.event.issue.body }}"
           echo "Running: yarn $LABEL with context"
-          yarn "$LABEL" "# ${{ github.event.issue.title }} \n\n${{ github.event.issue.body }}"
+          yarn "$LABEL" -- "$CONTEXT"
 
       - name: Create and Switch to New Branch
         run: |
-          BRANCH_NAME="chatgpt/${{ github.event.issue.number }}-create-content"
+          BRANCH_NAME="chatgpt/${{ github.event.issue.number }}-content"
           git checkout -b $BRANCH_NAME
           git add .
           git commit -m "Create AI content for issue #${{ github.event.issue.number }}"
