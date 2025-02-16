@@ -1,0 +1,28 @@
+{
+  "name": "gpt_content",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.ts",
+    "build": "tsc",
+    "lesson": "node ./dist/scripts/lesson.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "handlebars": "^4.7.8",
+    "openai": "^4.83.0",
+    "yaml": "^2.7.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/handlebars": "^4.0.40",
+    "typescript": "^5.7.3",
+    "@types/yargs": "^17.0.33",
+    "yargs": "^17.7.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2"
+  }
+}

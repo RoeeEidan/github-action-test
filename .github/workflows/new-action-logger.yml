@@ -11,7 +11,8 @@ permissions:
 
 jobs:
   create-pr:
-    if: contains(github.event.issue.labels.*.name, 'ChatGPT')
+    if: >
+      contains(join(github.event.issue.labels.*.name, ','), 'ChatGPT:')
     runs-on: ubuntu-latest
 
     steps:
@@ -23,16 +24,31 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Create Dummy File
+      - name: Install Dependencies
+        run: yarn install 
+
+      - name: Run Build
+        run: yarn build
+
+      - name: Run Script Based on Label with Context and Env
+        id: run_script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          echo "This is a dummy file created for issue #${{ github.event.issue.number }}" > dummy.txt
+          LABEL=$(echo "${{ join(github.event.issue.labels.*.name, ',') }}" | grep -oE 'ChatGPT:[^,]*' | head -n1 | cut -d':' -f2)
+          if [ -z "$LABEL" ]; then
+            echo "No matching ChatGPT label found."
+            exit 1
+          fi
+          echo "Running: yarn $LABEL with context"
+          yarn "$LABEL" "# ${{ github.event.issue.title }} \n\n${{ github.event.issue.body }}"
 
       - name: Create and Switch to New Branch
         run: |
-          BRANCH_NAME="issue-${{ github.event.issue.number }}"
+          BRANCH_NAME="chatgpt/${{ github.event.issue.number }}-create-content"
           git checkout -b $BRANCH_NAME
-          git add dummy.txt
-          git commit -m "Add dummy file for issue #${{ github.event.issue.number }}"
+          git add .
+          git commit -m "Create AI content for issue #${{ github.event.issue.number }}"
           git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git $BRANCH_NAME
 
       - name: Create Pull Request

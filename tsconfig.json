@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "target": "es6",
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "sourceMap": true,
+        "outDir": "dist",
+        "resolveJsonModule": true,
+    },
+    "ts-node": {
+        "transpileOnly": true,
+        "require": [
+            "tsconfig-paths/register"
+        ],
+        "compilerOptions": {
+            "noEmit": true,
+            "sourceMap": false,
+            "rootDir": "src"
+        }
+    },
+    "lib": [
+        "es2015"
+    ]
+}
