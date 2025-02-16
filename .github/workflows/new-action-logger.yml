@@ -55,17 +55,17 @@ jobs:
             console.log(`PR created: ${response.data.html_url}`);
             return response.data.number;
 
-      - name: Request Reviewer
+      - name: Assign Issue Creator to PR
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.PAT_TOKEN }}
           script: |
             const prNumber = ${{ steps.create_pr.outputs.result }};
             const creator = '${{ github.event.issue.user.login }}';
-            await github.rest.pulls.requestReviewers({
+            await github.rest.issues.addAssignees({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              pull_number: prNumber,
-              reviewers: [creator]
+              issue_number: prNumber,
+              assignees: [creator]
             });
-            console.log(`Reviewer requested: ${creator}`);
+            console.log(`Assignee added: ${creator}`);
