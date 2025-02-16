@@ -6,7 +6,8 @@
   "scripts": {
     "start": "nodemon ./src/index.ts",
     "build": "tsc",
-    "lesson": "node ./dist/scripts/lesson.js"
+    "lesson": "node ./dist/scripts/lesson.js",
+    "challenge": "node ./dist/scripts/challenge.js"
   },
   "author": "",
   "license": "ISC",
