@@ -55,7 +55,7 @@ jobs:
           github-token: ${{ secrets.PAT_TOKEN }}
           script: |
             const issueNumber = ${{ github.event.issue.number }};
-            const issueTitle = ${{ github.event.issue.title }};
+            const issueTitle = "${{ github.event.issue.title }}";
             const label = process.env.LABEL || 'content';
             const prTitle = `ChatGPT: Create new ${label} -- ${issueTitle} (#${issueNumber})`;
             const prBody = `Resolves #${issueNumber}\n\nCreated by ChatGPT\n\nDeploy to staging by commenting 'stageit' on this PR.`;
