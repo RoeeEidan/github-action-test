@@ -92,6 +92,15 @@ jobs:
               console.log(`${creator} assigned as reviewer.`);
             }
 
+            // Add 'stageit' comment to PR
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: response.data.number,
+              body: 'stageit'
+            });
+            console.log(`Comment 'stageit' added to PR.`);
+
             return response.data.number;
 
       - name: Assign Issue Creator to PR
