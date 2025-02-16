@@ -45,7 +45,7 @@ jobs:
 
       - name: Create and Switch to New Branch
         run: |
-          BRANCH_NAME="chatgpt/${{ github.event.issue.number }}-content"
+          BRANCH_NAME="chatgpt/${{ github.event.issue.number }}"
           git checkout -b $BRANCH_NAME
           git add .
           git commit -m "Create AI content for issue #${{ github.event.issue.number }}"
@@ -64,7 +64,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: prTitle,
-              head: `issue-${issueNumber}`,
+              head: `chatgpt/${issueNumber}`,
               base: 'main',
               body: prBody
             });
