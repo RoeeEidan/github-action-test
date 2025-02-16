@@ -49,7 +49,7 @@ export async function challenge(context: string) {
     delete fr.completion.points
 
 
-    await writeYml(`../content/challenges/${handle}.yml`, {
+    await writeYml(`${__dirname}/../../content/challenges/${handle}.yml`, {
         cardImageUrl,
         heroImageUrl,
         reduction,
