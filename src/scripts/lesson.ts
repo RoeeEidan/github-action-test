@@ -6,7 +6,7 @@ if (!process.env.OPENAI_API_KEY) {
 }
 
 async function main() {
-    const argv = yargs().command('$0 <context>', 'Generate a lesson')
+    const argv = yargs.command('$0 <context>', 'Generate a lesson')
         .usage(`$0 <context>`)
         .positional('context', {
             type: 'string',
