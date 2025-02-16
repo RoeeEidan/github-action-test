@@ -1,0 +1,104 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-BYziGP3Z393cla6dyD7Xtuan.png?st=2025-02-16T21%3A17%3A22Z&se=2025-02-16T23%3A17%3A22Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T19%3A53%3A50Z&ske=2025-02-17T19%3A53%3A50Z&sks=b&skv=2024-08-04&sig=mM%2BJEevm9yxBe5NEDNBgBMIjnGOcrgjzftxMhM/7t4E%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-BYziGP3Z393cla6dyD7Xtuan.png?st=2025-02-16T21%3A17%3A22Z&se=2025-02-16T23%3A17%3A22Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T19%3A53%3A50Z&ske=2025-02-17T19%3A53%3A50Z&sks=b&skv=2024-08-04&sig=mM%2BJEevm9yxBe5NEDNBgBMIjnGOcrgjzftxMhM/7t4E%3D
+reduction: 0
+saving: 0
+points:
+  question: 50
+  education: 200
+  upload: 100
+  completion: 50
+multipleChoice: true
+en:
+  handle: watch-greta-thunbergs-ted-talk
+  reduction: 0
+  saving: 0
+  name: Watch Greta Thunberg's TED Talk on Climate Action
+  message: Ready for some inspiration from one of the most renowned environmental
+    activists? Watch Greta Thunberg's powerful TED talk to understand the
+    imperative need for climate action, particularly focusing on food and
+    agricultural systems!
+  overview: Dive deep into our environmental impact by watching Greta Thunberg's
+    famous TED talk. Discover the pressing issues that arise from our food and
+    agricultural systems—key contributors to climate change. By learning about
+    the challenges and opportunities in transforming our approach to food
+    production, you can be part of the solution.
+  question:
+    heading: Food and Agriculture Impact
+    description: Which of the following represents a major environmental impact of
+      our current food and agriculture systems?
+    answers:
+      a: More than a quarter of greenhouse gas emissions come from food production.
+      b: Half of the habitable land on Earth is devoted to agriculture.
+      c: The agricultural sector consumes 70% of the world's freshwater withdrawals.
+      d: All of the above are true.
+      e: None of the above.
+  education:
+    heading: Watch Greta's TED Talk
+    description: To learn more about the impact of food and agriculture systems on
+      our planet, watch Greta Thunberg's TED talk. Reflect on how our everyday
+      choices, especially around food, contribute to the bigger picture of
+      climate change.
+    link:
+      text: Watch Greta's TED Talk
+      url: https://www.ted.com/talks/greta_thunberg_the_disarming_case_to_act_right_now_on_climate_change
+      popup: undefined
+  upload:
+    heading: Share Your Thoughts
+    description: After watching the TED talk, we invite you to upload a short
+      personal reflection on what resonated with you the most. How do you see
+      your role in transforming the current food and agricultural systems? Text,
+      PDF, or image uploads are welcome.
+  completion:
+    heading: Congratulations on Taking Action
+    description: You're on your way to making a difference! By engaging with Greta
+      Thunberg's TED talk, you've taken a significant step in understanding and
+      acting upon food and agriculture's impact on our climate. Keep going!
+fr:
+  handle: watch-greta-thunbergs-ted-talk
+  reduction: 0
+  saving: 0
+  name: Regardez le TED Talk de Greta Thunberg sur l'Action Climatique
+  message: Prêt(e) à recevoir de l'inspiration d'une des militantes
+    environnementales les plus renommées? Regardez le puissant TED talk de Greta
+    Thunberg pour comprendre l'impérieuse nécessité de l'action climatique, en
+    se concentrant particulièrement sur les systèmes alimentaires et agricoles!
+  overview: Plongez profondément dans notre impact environnemental en regardant le
+    célèbre TED talk de Greta Thunberg. Découvrez les problèmes pressants qui
+    découlent de nos systèmes alimentaires et agricoles, des contributeurs clés
+    au changement climatique. En apprenant sur les défis et opportunités de la
+    transformation de notre approche à la production alimentaire, vous pouvez
+    faire partie de la solution.
+  question:
+    heading: Impact des Systèmes Alimentaires et Agricoles
+    description: Laquelle des affirmations suivantes représente un impact
+      environnemental majeur de nos systèmes alimentaires et agricoles actuels?
+    answers:
+      a: Plus d'un quart des émissions de gaz à effet de serre provient de la
+        production alimentaire.
+      b: La moitié des terres habitables de la Terre est consacrée à l'agriculture.
+      c: Le secteur agricole consomme 70% des prélèvements mondiaux d'eau douce.
+      d: Toutes les réponses ci-dessus sont vraies.
+      e: Aucune des réponses ci-dessus.
+  education:
+    heading: Regardez le TED Talk de Greta
+    description: Pour en savoir plus sur l'impact des systèmes alimentaires et
+      agricoles sur notre planète, regardez le TED talk de Greta Thunberg.
+      Réfléchissez à la façon dont nos choix quotidiens, en particulier autour
+      de l'alimentation, contribuent au tableau global du changement climatique.
+    link:
+      text: Regardez le TED Talk de Greta
+      url: https://www.ted.com/talks/greta_thunberg_the_disarming_case_to_act_right_now_on_climate_change
+      popup: undefined
+  upload:
+    heading: Partagez Vos Réflexions
+    description: Après avoir regardé le TED talk, nous vous invitons à télécharger
+      une courte réflexion personnelle sur ce qui vous a le plus touché. Comment
+      envisagez-vous votre rôle dans la transformation des systèmes alimentaires
+      et agricoles actuels? Les textes, fichiers PDF ou images sont les
+      bienvenus.
+  completion:
+    heading: Félicitations pour Votre Action
+    description: Vous êtes en voie d'apporter un changement! En vous engageant avec
+      le TED talk de Greta Thunberg, vous avez fait un pas significatif dans la
+      compréhension et l'action sur l'impact de l'alimentation et de
+      l'agriculture sur notre climat. Continuez comme ça!
