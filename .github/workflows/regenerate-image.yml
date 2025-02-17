@@ -62,7 +62,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           echo "Running yarn regenerateImage with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
-          yarn regenerateImage "$CONTENT_TYPE" "$CONTENT_HANDLE"
+          RESULT=$(yarn regenerateImage "$CONTENT_TYPE" "$CONTENT_HANDLE")
+          IMAGE=$(echo "$RESULT" | grep 'IMAGE: ' | cut -d' ' -f2)
+          echo "CONTENT_IMAGE=$IMAGE" >> $GITHUB_ENV
 
       - name: Comment on Issue
         uses: actions/github-script@v7
@@ -72,9 +74,10 @@ jobs:
             const issueNumber = ${{ github.event.issue.number }};
             const contentType = process.env.CONTENT_TYPE;
             const contentHandle = process.env.CONTENT_HANDLE;
+            const image = process.env.CONTENT_IMAGE || 'N/A';
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
-              body: `✅ Image regenerated for content type: **${contentType}** with handle: **${contentHandle}**.`
+              body: `✅ [Image regenerated](image) for content type: \`${contentType}\` with handle: \`${contentHandle}\`.`
             });
