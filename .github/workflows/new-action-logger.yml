@@ -69,11 +69,26 @@ jobs:
             const image = process.env.CONTENT_IMAGE || 'N/A';
             const label = process.env.LABEL || 'content';
             const branchName = process.env.BRANCH_NAME;
+            const pathnames = { lesson: 'climate-class-view', challenge: 'challenge' }
             const prTitle = `ChatGPT ${label}: ${contentHandle} for Issue #${issueNumber}`;
             const prBody = `Resolves #${issueNumber} _Created by ChatGPT_
             
-            Generated Content Handle: \`${contentHandle}\`
-            [Generate Image](${image})`;
+            Generated \`${label}\` with handle: \`${contentHandle}\`
+            [Generate Image](${image})
+            
+            ---
+
+            **Links:**
+            - [staging](https://staging.mammothclimate.io/en/${pathnames[label]}/${contentHandle}) - Available about 5 minutes after the PR was created
+            - [production](https://www.mammothclimate.io/en/${pathnames[label]}/${contentHandle}) - Available after the PR is merged & released
+
+            ---
+
+            **Available comments:**
+            - \`stageit\`- Triggers a staging deployment with the latest changes in this PR
+            - \`regenerate image\` - Uses ChatGPT to re generate the image in this PR
+
+            `;
 
             const response = await github.rest.pulls.create({
               owner: context.repo.owner,
