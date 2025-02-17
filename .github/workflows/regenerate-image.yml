@@ -65,6 +65,7 @@ jobs:
         run: |
           echo "Running yarn regenerateImage with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
           RESULT=$(yarn regenerateImage "$CONTENT_TYPE" "$CONTENT_HANDLE")
+          echo "$RESULT"
           IMAGE=$(echo "$RESULT" | grep 'IMAGE: ' | cut -d' ' -f2)
           echo "CONTENT_IMAGE=$IMAGE" >> $GITHUB_ENV
 

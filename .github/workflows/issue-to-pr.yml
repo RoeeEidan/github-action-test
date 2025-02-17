@@ -43,6 +43,7 @@ jobs:
           CONTEXT="# $SAFE_TITLE\n\n$SAFE_BODY"
           echo "Running: yarn $LABEL with context"
           RESULT=$(yarn "$LABEL" "$CONTEXT")
+          echo "$RESULT"
           HANDLE=$(echo "$RESULT" | grep 'HANDLE: ' | cut -d' ' -f2)
           IMAGE=$(echo "$RESULT" | grep 'IMAGE: ' | cut -d' ' -f2)
           echo "CONTENT_HANDLE=$HANDLE" >> $GITHUB_ENV
