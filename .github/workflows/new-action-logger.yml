@@ -72,7 +72,7 @@ jobs:
             const prTitle = `ChatGPT ${label}: ${contentHandle} for Issue #${issueNumber}`;
             const prBody = `Resolves #${issueNumber} _Created by ChatGPT_
             
-            Generated Content Handle: \\`${contentHandle}\\`
+            Generated Content Handle: \`${contentHandle}\`
             [Generate Image](${image})`;
 
             const response = await github.rest.pulls.create({
