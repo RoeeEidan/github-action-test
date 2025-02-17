@@ -70,10 +70,11 @@ jobs:
 
       - name: Commit Changes with PAT Token Push
         run: |
+          CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
           if [[ -n $(git status --porcelain) ]]; then
             git add .
             git commit -m "Regenerated image for $CONTENT_TYPE/$CONTENT_HANDLE"
-            git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git "$BRANCH_NAME"
+            git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git "$CURRENT_BRANCH"
           else
             echo "No changes to commit."
           fi
