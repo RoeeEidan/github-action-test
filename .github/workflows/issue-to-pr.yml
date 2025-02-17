@@ -86,13 +86,13 @@ jobs:
 
             **Available comments:**
             Triggers a staging deployment with the latest changes in this PR
-            ```bash
+            \`\`\`bash
             stageit
-            ```
+            \`\`\`
             Uses ChatGPT to re generate the image in this PR
-            ```bash
+            \`\`\`bash
             regenerate image
-            ``` 
+            \`\`\`
             `;
 
             const response = await github.rest.pulls.create({
