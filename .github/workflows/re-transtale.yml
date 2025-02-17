@@ -10,7 +10,7 @@ permissions:
   pull-requests: write
 
 jobs:
-  regenerate-image:
+  re-translate:
     if: startsWith(github.event.comment.body, 'retranslate')
     runs-on: ubuntu-latest
 
