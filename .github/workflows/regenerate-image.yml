@@ -17,20 +17,17 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.issue.pull_request.head.ref }}
 
       - name: Set Up Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Extract Content Type and Handle from PR Head Ref (with Debug)
+      - name: Extract Content Type and Handle from PR Head Ref
         run: |
-          echo "Debug: Checking event payload"
-          echo "github.event_name: ${{ github.event_name }}"
-          echo "github.event.issue.pull_request: ${{ toJson(github.event.issue.pull_request) }}"
-          echo "github.event.pull_request.head.ref: ${{ github.event.pull_request && github.event.pull_request.head.ref }}"
-
-          BRANCH_NAME="${{ github.event.issue.pull_request && github.event.issue.pull_request.head.ref || github.event.pull_request && github.event.pull_request.head.ref || github.ref_name }}"
+          BRANCH_NAME="${{ github.event.issue.pull_request.head.ref }}"
           echo "Branch name detected: $BRANCH_NAME"
 
           if [[ -z "$BRANCH_NAME" ]]; then
@@ -49,8 +46,10 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install
+
       - name: Build
         run: yarn build
+
       - name: Run Regenerate Image Script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
