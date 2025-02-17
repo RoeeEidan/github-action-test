@@ -70,7 +70,7 @@ jobs:
             const label = process.env.LABEL || 'content';
             const branchName = process.env.BRANCH_NAME;
             const pathnames = { lesson: 'climate-class-view', challenge: 'challenge' }
-            const prTitle = `ChatGPT ${label}: ${contentHandle} for Issue #${issueNumber}`;
+            const prTitle = `ChatGPT \`${label}\`: ${contentHandle} for Issue #${issueNumber}`;
             const prBody = `Resolves #${issueNumber} _Created by ChatGPT_
             
             Generated \`${label}\` with handle: \`${contentHandle}\`
