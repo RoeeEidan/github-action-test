@@ -23,14 +23,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Print the GitHub context
+
+      - name: Get PR details via GitHub API
+        id: pr_details
+        uses: octokit/request-action@v2.x
+        with:
+          route: GET /repos/${{ github.repository }}/pulls/${{ github.event.issue.number }}
         env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-        
-      - name: Extract Content Type and Handle from PR Event Context
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Content Type and Handle from PR Head Ref
         run: |
-          BRANCH_NAME="${{ github.event.comment.issue.pull_request && github.event.comment.issue.pull_request.head.ref || github.event.pull_request.head.ref }}"
+          BRANCH_NAME="${{ fromJson(steps.pr_details.outputs.data).head.ref }}"
           echo "Branch name detected: $BRANCH_NAME"
 
           if [[ -z "$BRANCH_NAME" ]]; then
