@@ -23,16 +23,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Extract Content Type and Handle from Branch Name
+      - name: Extract Content Type and Handle from PR Head Ref
         run: |
-          BRANCH_NAME=$(echo "${{ github.event.issue.pull_request.head.ref }}")
-          echo "Branch name: $BRANCH_NAME"
+          if [[ -n "${{ github.event.issue.pull_request }}" ]]; then
+            BRANCH_NAME="${{ github.event.issue.pull_request.head.ref }}"
+          else
+            BRANCH_NAME="${{ github.head_ref }}"
+          fi
+          echo "Branch name detected: $BRANCH_NAME"
+
+          if [[ -z "$BRANCH_NAME" ]]; then
+            echo "Error: BRANCH_NAME is empty. Exiting."
+            exit 1
+          fi
+
           CONTENT_TYPE=$(echo "$BRANCH_NAME" | awk -F'/' '{print $3}')
           CONTENT_HANDLE=$(echo "$BRANCH_NAME" | awk -F'/' '{print $4}')
           echo "CONTENT_TYPE=$CONTENT_TYPE" >> $GITHUB_ENV
           echo "CONTENT_HANDLE=$CONTENT_HANDLE" >> $GITHUB_ENV
-          echo "Extracted content type: $CONTENT_TYPE"
-          echo "Extracted content handle: $CONTENT_HANDLE"
+          echo "Extracted Content Type: $CONTENT_TYPE"
+          echo "Extracted Content Handle: $CONTENT_HANDLE"
 
       - name: Install Dependencies
         run: yarn install
