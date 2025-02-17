@@ -23,6 +23,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Print the GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+        
       - name: Extract Content Type and Handle from PR Event Context
         run: |
           BRANCH_NAME="${{ github.event.comment.issue.pull_request && github.event.comment.issue.pull_request.head.ref || github.event.pull_request.head.ref }}"
