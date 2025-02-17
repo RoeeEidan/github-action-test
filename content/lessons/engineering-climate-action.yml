@@ -41,42 +41,28 @@ en:
   popup:
     heading: "Lead the Change: Engineers for Climate Action!"
 fr:
-  heading: "Ingénieurs comme Champions du Climat: Un Guide pour Agir"
-  body: |-
-    Les ingénieurs sont les héros méconnus de la lutte contre le changement climatique, ayant le pouvoir de concevoir de manière durable, d'augmenter l'efficacité opérationnelle et de défendre la cause environnementale. **Voici votre chance de devenir un champion du climat!** 🎖️ Plongez dans notre guide complet inspiré par le [Guide d'Action pour les Ingénieurs de Project Drawdown](https://drawdown.org/programs/drawdown-labs/job-function-action-guides/engineering).
+  heading: Action climatique importante en Europe
+  body: >-
+    L'Union européenne a annoncé des plans ambitieux pour atteindre la
+    neutralité carbone d'ici 2050. Ce pas significatif vers la durabilité
+    comprend des mesures pour réduire les émissions de gaz à effet de serre de
+    55 % d'ici 2030, par rapport aux niveaux de 1990.
 
-    ## Pourquoi les Ingénieurs Devraient Conduire les Solutions Climatiques
-    - **Économies de Coût:** Des entreprises comme [Etsy](https://www.thoughtworks.com/) ont montré que le passage au vert peut aussi rapporter gros en réduisant les émissions et les coûts.
-    - **Compétitivité sur le Marché:** Un imposant 60 % des consommateurs, selon [IBM](https://www.ibm.com/), privilégient des produits écologiques.
-    - **Atténuation des Risques:** Comme le fait remarquer [Capgemini](https://www.capgemini.com), le design durable n'est pas seulement bon pour la planète, il aide aussi à réduire les responsabilités d'entreprise!
 
-    ## Actions Clés pour les Ingénieurs
-    ### 1. Mesurer l'Impact des Produits avec des ACV
-    Commencez par identifier les points chauds en carbone de votre produit en utilisant des outils comme [Ecochain](https://www.ecochain.com/) et la recherche d'ACV de [Nature](https://www.nature.com/).
+    Ce plan repose sur plusieurs piliers, y compris l'accélération de la
+    transition vers les énergies renouvelables, l'investissement dans des
+    infrastructures écologiques, et la promotion de l'efficacité énergétique
+    dans tous les secteurs économiques. 🌿
 
-    ### 2. Adopter des Pratiques Logicielles Durables
-    Plongez dans le logiciel vert en découvrant les meilleures pratiques de la [Green Software Foundation](https://learn.greensoftware.foundation/). Explorez également l'informatique sans serveur avec des ressources de [IBM](https://www.ibm.com/) et [Microsoft](https://learn.microsoft.com/).
 
-    ### 3. Concevoir selon les Principes de l'Économie Circulaire
-    Évitez le gaspillage et concevez pour la longévité avec [Durability Matters](https://www.durabilitymatters.com/) et réduisez les déchets électroniques grâce aux directives de [UNStats](https://unstats.un.org/).
-
-    ### 4. Plaider pour la Justice Climatique
-    Assurez-vous que vos solutions ne profitent pas seulement à l'environnement, mais qu'elles soutiennent également les communautés mal desservies en appuyant les principales politiques de durabilité.
-
-    ## Commencez Immédiatement:
-    - Réalisez une ACV dès aujourd'hui avec [Ecochain](https://www.ecochain.com).
-    - Adoptez l'informatique sans serveur guidée par [IBM](https://www.ibm.com/).
-    - Réévaluez votre design avec une nouvelle perspective de [Durability Matters](https://www.durabilitymatters.com/).
-
-    ## Ressources Complémentaires
-    - 📘 [Capgemini - Avantages des Produits Durables](https://www.capgemini.com/)
-    - 💡 [ThoughtWorks - Étude de Cas Etsy](https://www.thoughtworks.com/)
-    - 💻 [Green Software Foundation](https://learn.greensoftware.foundation/)
-
-    Devenez une force pour le changement en concevant l'avenir. 🌍
+    Les objectifs de l'UE sont de réduire l'empreinte carbone, de stimuler
+    l'économie verte, et de garantir un avenir plus sain et plus durable pour
+    les générations futures. Les dirigeants espèrent que d'autres régions du
+    monde suivront cet exemple pour combattre le changement climatique à une
+    échelle globale.
   message:
-    heading: Vous, un Ingénieur, Pouvez Sauver la Planète! 🌿
-    body: Libérez votre potentiel pour mener des actions climatiques grâce à notre
-      guide pratique rempli d'idées et d'actions pour un avenir durable.
+    heading: Écoute ça! 🌍
+    body: L'UE fait des vagues avec ses nouvelles ambitions climatiques. En route
+      pour un avenir carboneutre!
   popup:
-    heading: "Conduisez le Changement: Ingénieurs pour l'Action Climatique!"
+    heading: Action climatique de l'UE
