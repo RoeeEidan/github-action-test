@@ -13,14 +13,14 @@ export async function reTranslate(contentType: string, handle: string) {
             const lessonPath = `${__dirname}/../../content/lessons/${handle}.yml`
             const lesson = await readYml(lessonPath)
             if (!lesson) throw new Error(`Lesson with handle ${handle} not found`)
-            const { handle: _, ...fr } = await generate('frenchLesson', lesson.en)
+            const { handle: _, ...fr } = await generate('frenchLesson', JSON.stringify(lesson.en))
             await writeYml(lessonPath, { ...lesson, fr })
             break;
         case 'challenge':
             const path = `${__dirname}/../../content/challenges/${handle}.yml`
             const challenge = await readYml(path)
             if (!challenge) throw new Error(`Challenge with handle ${handle} not found`)
-            const frChallenge = await generate('frenchChallenge', challenge.en)
+            const frChallenge = await generate('frenchChallenge', JSON.stringify(challenge.en))
             await writeYml(path, {
                 ...challenge,
                 ...formatChallenges(challenge.en, frChallenge)
