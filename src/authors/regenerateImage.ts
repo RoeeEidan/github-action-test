@@ -23,7 +23,7 @@ export async function regenerateImage(contentType: string, handle: string) {
         throw new Error(`Lesson with handle ${handle} not found`)
     }
 
-    const imagePrompt = await generate('imagePrompt', `# ${content.heading || content.name} \n ${content.body || content.overview}`)
+    const imagePrompt = await generate('imagePrompt', `# ${content.en.heading || content.en.name} \n ${content.en.body || content.en.overview}`)
 
     const imageUrl = await image(imagePrompt.prompt)
 
