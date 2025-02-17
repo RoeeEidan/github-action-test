@@ -68,6 +68,16 @@ jobs:
           IMAGE=$(echo "$RESULT" | grep 'IMAGE: ' | cut -d' ' -f2)
           echo "CONTENT_IMAGE=$IMAGE" >> $GITHUB_ENV
 
+      - name: Commit Changes
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            git add .
+            git commit -m "Regenerated image for $CONTENT_TYPE/$CONTENT_HANDLE"
+            git push origin "$BRANCH_NAME"
+          else
+            echo "No changes to commit."
+          fi
+
       - name: Comment on Issue
         uses: actions/github-script@v7
         with:
@@ -81,5 +91,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
-              body: `✅ [Image regenerated](image) for content type: \`${contentType}\` with handle: \`${contentHandle}\`.`
+              body: `✅ [Image regenerated](${image}) for content type: \`${contentType}\` with handle: \`${contentHandle}\`.`
             });
