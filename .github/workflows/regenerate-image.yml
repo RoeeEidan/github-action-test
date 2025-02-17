@@ -23,9 +23,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Extract Content Type and Handle from PR Head Ref
+      - name: Extract Content Type and Handle from PR Head Ref (with Fallback)
         run: |
-          BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+          BRANCH_NAME="${{ github.event.issue.pull_request.head.ref || github.event.pull_request.head.ref }}"
           echo "Branch name detected: $BRANCH_NAME"
 
           if [[ -z "$BRANCH_NAME" ]]; then
@@ -44,7 +44,6 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install
-
       - name: Build
         run: yarn build
       - name: Run Regenerate Image Script
