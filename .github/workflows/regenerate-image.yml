@@ -23,9 +23,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Extract Content Type and Handle from PR Head Ref (with Fallback)
+      - name: Extract Content Type and Handle from PR Head Ref (with Debug)
         run: |
-          BRANCH_NAME="${{ github.event.issue.pull_request.head.ref || github.event.pull_request.head.ref }}"
+          echo "Debug: Checking event payload"
+          echo "github.event_name: ${{ github.event_name }}"
+          echo "github.event.issue.pull_request: ${{ toJson(github.event.issue.pull_request) }}"
+          echo "github.event.pull_request.head.ref: ${{ github.event.pull_request && github.event.pull_request.head.ref }}"
+
+          BRANCH_NAME="${{ github.event.issue.pull_request && github.event.issue.pull_request.head.ref || github.event.pull_request && github.event.pull_request.head.ref || github.ref_name }}"
           echo "Branch name detected: $BRANCH_NAME"
 
           if [[ -z "$BRANCH_NAME" ]]; then
