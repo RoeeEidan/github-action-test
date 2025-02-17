@@ -1,34 +1,11 @@
 import 'dotenv/config'
 import { image } from '../assistants/openAi';
 import generate from '../assistants';
-import { writeYml, writeMd } from './helpers';
+import { writeYml } from './helpers';
 
-export async function challenge(context: string) {
-    const start = new Date()
-
-    console.log('Kicking off the challenge generation process...')
-
-    const englishChallenge = await generate('englishChallenge', context)
-
-    console.log(`HANDLE: ${englishChallenge.handle}`)
-
-    const frenchChallenge = await generate('frenchChallenge', JSON.stringify(englishChallenge))
-    const imagePrompt = await generate('imagePrompt', `# ${englishChallenge.name} \n ${englishChallenge.overview}`)
-    const imageUrl = await image(imagePrompt.prompt)
-
-    console.log(`IMAGE: ${imageUrl}`)
-
-    // // TODO: Implement the image generation for the lesson card
-    // /* 1. Download the image from the URL */
-    // /* 2. Resize the card image  563x563 */
-    // /* 3. Save both images to AWS S3 */
-    const heroImageUrl = imageUrl
-    const cardImageUrl = imageUrl
-
-    // /* 4. Wrire the new lesson to a yaml file  */
-
-
-    const { handle, reduction, saving, question, education, upload, completion } = englishChallenge
+type C = Awaited<ReturnType<typeof generate<'englishChallenge'>>>
+export function formatChallenges(englishChallenge: C, frenchChallenge: C) {
+    const { reduction, saving, question, education, upload, completion } = englishChallenge
 
     const points = {
         question: question.points,
@@ -38,7 +15,7 @@ export async function challenge(context: string) {
     }
 
     const multipleChoice = question.multipleChoice
-    
+
     const en: any = { ...englishChallenge }
     delete en.handle
     delete en.reduction
@@ -59,17 +36,44 @@ export async function challenge(context: string) {
     delete fr.upload.points
     delete fr.completion.points
 
-
-    await writeYml(`${__dirname}/../../content/challenges/${handle}.yml`, {
-        cardImageUrl,
-        heroImageUrl,
+    return {
         reduction,
         saving,
         points,
         multipleChoice,
         en,
         fr
-    })
+    }
+}
+
+export async function challenge(context: string) {
+    const start = new Date()
+
+    console.log('Kicking off the challenge generation process...')
+
+    const englishChallenge = await generate('englishChallenge', context)
+
+    console.log(`HANDLE: ${englishChallenge.handle}`)
+
+    const frenchChallenge = await generate('frenchChallenge', JSON.stringify(englishChallenge))
+    const imagePrompt = await generate('imagePrompt', `# ${englishChallenge.name} \n ${englishChallenge.overview}`)
+    const imageUrl = await image(imagePrompt.prompt)
+
+    console.log(`IMAGE: ${imageUrl}`)
+
+    // // TODO: Implement the image generation for the lesson card
+    // /* 1. Download the image from the URL */
+    // /* 2. Resize the card image  563x563 */
+    // /* 3. Save both images to AWS S3 */
+    // /* 4. Wrire the new lesson to a yaml file  */
+    await writeYml(
+        `${__dirname}/../../content/challenges/${englishChallenge.handle}.yml`,
+        {
+            heroImageUrl: imageUrl,
+            cardImageUrl: imageUrl,
+            ...formatChallenges(englishChallenge, frenchChallenge)
+        }
+    )
 
     const end = new Date()
     console.log(`Completed the lesson generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)

@@ -94,6 +94,10 @@ jobs:
             \`\`\`bash
             regenerate image
             \`\`\`
+            Uses ChatGPT to re translate the content in this PR
+            \`\`\`bash
+            retranslate
+            \`\`\`
             `;
 
             const response = await github.rest.pulls.create({

@@ -1,4 +1,4 @@
-name: Regenerate Image Workflow
+name: Re Translate Workflow
 
 on:
   issue_comment:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   regenerate-image:
-    if: startsWith(github.event.comment.body, 'regenerate image')
+    if: startsWith(github.event.comment.body, 'retranslate')
     runs-on: ubuntu-latest
 
     steps:
@@ -59,22 +59,19 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Run Regenerate Image Script
+      - name: Run Re Translate Script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          echo "Running yarn regenerateImage with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
-          RESULT=$(yarn regenerateImage "$CONTENT_TYPE" "$CONTENT_HANDLE")
-          echo "$RESULT"
-          IMAGE=$(echo "$RESULT" | grep 'IMAGE: ' | cut -d' ' -f2)
-          echo "CONTENT_IMAGE=$IMAGE" >> $GITHUB_ENV
+          echo "Running yarn reTranslate with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
+          yarn reTranslate "$CONTENT_TYPE" "$CONTENT_HANDLE"
 
       - name: Commit Changes with PAT Token Push
         run: |
           CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
           if [[ -n $(git status --porcelain) ]]; then
             git add .
-            git commit -m "Regenerate image for $CONTENT_TYPE/$CONTENT_HANDLE"
+            git commit -m "Re-translate $CONTENT_TYPE/$CONTENT_HANDLE"
             git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git "$CURRENT_BRANCH"
           else
             echo "No changes to commit."
@@ -93,5 +90,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
-              body: `✅ [Image regenerated](${image}) for \`${contentType}\` with handle \`${contentHandle}\`.`
+              body: `✅ Re-translated \`${contentType}\` with handle \`${contentHandle}\`.`
             });

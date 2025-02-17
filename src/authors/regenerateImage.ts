@@ -3,40 +3,38 @@ import { image } from '../assistants/openAi';
 import generate from '../assistants';
 import { writeYml, readYml } from './helpers';
 
-const allowedContentTypes = ['lesson', 'challenge']
-
 export async function regenerateImage(contentType: string, handle: string) {
 
-    if (!allowedContentTypes.includes(contentType)) {
-        throw new Error(`Content type ${contentType} is not allowed`)
-    }
-
     const start = new Date()
-
     console.log('Kicking off the lesson generation process...')
 
-    const path = `${__dirname}/../../content/${contentType}s/${handle}.yml`
+    switch (contentType) {
 
-    const content = await readYml(path)
+        case 'lesson':
+            const lessonPath = `${__dirname}/../../content/lessons/${handle}.yml`
+            const lesson = await readYml(lessonPath)
+            const lessonImagePrompt = await generate('imagePrompt', `# ${lesson.en.heading} \n ${lesson.en.body}`)
+            const lessonImageUrl = await image(lessonImagePrompt.prompt)
+            console.log(`IMAGE: ${lessonImageUrl}`)
+            lesson.heroImageUrl = lessonImageUrl
+            lesson.cardImageUrl = lessonImageUrl
+            await writeYml(lessonPath, lesson)
+            break;
 
-    if (!content) {
-        throw new Error(`Lesson with handle ${handle} not found`)
+        case 'challenge':
+            const challengePath = `${__dirname}/../../content/challenges/${handle}.yml`
+            const challenge = await readYml(challengePath)
+            const challengeImagePrompt = await generate('imagePrompt', `# ${challenge.en.name} \n ${challenge.en.overview}`)
+            const challengeImageUrl = await image(challengeImagePrompt.prompt)
+            console.log(`IMAGE: ${challengeImageUrl}`)
+            challenge.heroImageUrl = challengeImageUrl
+            challenge.cardImageUrl = challengeImageUrl
+            await writeYml(challengePath, challenge)
+            break;
+
+        default:
+            throw new Error(`Content type ${contentType} is not allowed`)
     }
-
-    const imagePrompt = await generate('imagePrompt', `# ${content.en.heading || content.en.name} \n ${content.en.body || content.en.overview}`)
-
-    const imageUrl = await image(imagePrompt.prompt)
-
-    console.log(`IMAGE: ${imageUrl}`)
-
-    // TODO: Implement the image generation for the lesson card
-    /* 1. Download the image from the URL */
-    /* 2. Resize the card image  563x563 */
-    /* 3. Save both images to AWS S3 */
-    content.heroImageUrl = imageUrl
-    content.cardImageUrl = imageUrl
-
-    await writeYml(path, content)
 
     const end = new Date()
     console.log(`Completed the lesson generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)
