@@ -1,4 +1,5 @@
 import yargs from 'yargs';
+import { regenerateImage } from '../authors/regenerateImage';
 
 if (!process.env.OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY is required')
@@ -26,6 +27,7 @@ async function main() {
         throw new Error('Content handle is required')
     }
 
+    regenerateImage(argv.contentHandle, argv.contentType)
     console.log(`Generating a challenge for ${argv.contentType} with handle ${argv.contentHandle}`)
 }
 

@@ -36,3 +36,12 @@ export const writeYml = (filename: string, data: any): Promise<void> => new Prom
         resolve();
     })
 })
+
+export const readYml = (filename: string): Promise<any> => new Promise((resolve, reject) => {
+    fs.readFile(filename, 'utf8', (err, data) => {
+        if (err) {
+            reject(err);
+        }
+        resolve(YAML.parse(data));
+    });
+});
