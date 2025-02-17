@@ -37,6 +37,9 @@ jobs:
       - name: Install Dependencies
         run: yarn install
 
+      - name: Build
+        run: yarn build
+
       - name: Run Regenerate Image Script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
