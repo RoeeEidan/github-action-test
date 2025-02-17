@@ -27,7 +27,7 @@ async function main() {
         throw new Error('Content handle is required')
     }
 
-    regenerateImage(argv.contentHandle, argv.contentType)
+    await regenerateImage(argv.contentType, argv.contentHandle)
     console.log(`Generating a challenge for ${argv.contentType} with handle ${argv.contentHandle}`)
 }
 
