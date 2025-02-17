@@ -17,17 +17,15 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.event.issue.pull_request.head.ref }}
 
       - name: Set Up Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Extract Content Type and Handle from PR Head Ref
+      - name: Extract Content Type and Handle from PR Event Context
         run: |
-          BRANCH_NAME="${{ github.event.issue.pull_request.head.ref }}"
+          BRANCH_NAME="${{ github.event.comment.issue.pull_request && github.event.comment.issue.pull_request.head.ref || github.event.pull_request.head.ref }}"
           echo "Branch name detected: $BRANCH_NAME"
 
           if [[ -z "$BRANCH_NAME" ]]; then
