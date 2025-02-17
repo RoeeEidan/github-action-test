@@ -1,0 +1,136 @@
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-IuJjjUJrKD9ejh14niFWPp7A.png?st=2025-02-17T00%3A49%3A08Z&se=2025-02-17T02%3A49%3A08Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T10%3A08%3A22Z&ske=2025-02-17T10%3A08%3A22Z&sks=b&skv=2024-08-04&sig=kTe5ocXmHajIVNqGePLv184cgqLKt5hM86DePqw4VRw%3D
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-IuJjjUJrKD9ejh14niFWPp7A.png?st=2025-02-17T00%3A49%3A08Z&se=2025-02-17T02%3A49%3A08Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-16T10%3A08%3A22Z&ske=2025-02-17T10%3A08%3A22Z&sks=b&skv=2024-08-04&sig=kTe5ocXmHajIVNqGePLv184cgqLKt5hM86DePqw4VRw%3D
+reduction: 2.5
+saving: 0
+points:
+  question: 100
+  education: 400
+  upload: 200
+  completion: 200
+multipleChoice: false
+en:
+  name: Reduce Food Waste
+  message: Food waste contributes significantly to environmental harm. Let's learn
+    how to cut down on waste and take action ourselves!
+  overview: Food waste is a major environmental issue, contributing to greenhouse
+    gas emissions, water waste, and biodiversity loss. By reducing our food
+    waste, we can make a big impact. Join this challenge to learn more and take
+    steps toward a zero-waste lifestyle.
+  question:
+    heading: Self-Assessment
+    description: How often do you throw away leftover food?
+    answers:
+      a: 🗑️ Frequently
+      b: ♻️ Sometimes
+      c: 🧊 Rarely (I store leftovers)
+      d: 🌱 Never (I repurpose everything!)
+  education:
+    heading: The Impact of Food Waste
+    description: Explore the massive impact of food waste on our environment and how
+      simple actions can make a big difference.
+    link:
+      text: Learn more about food waste
+      popup: >-
+        # The Impact of Food Waste 
+
+
+        - **Greenhouse Gas Emissions:** Food decomposing in landfills produces
+        methane, which is 25x more potent than CO₂.
+
+        - **Water Waste:** 2,500 liters of water are needed to produce 1 kg of
+        rice. Waste equates to resource waste.
+
+        - **Deforestation & Biodiversity Loss:** Reducing food waste decreases
+        the demand for land, helping protect ecosystems.
+
+
+        ## How You Can Make a Difference
+
+        - **Plan Your Meals:** Avoid impulse buys and use everything you
+        purchase.
+
+        - **Store Smartly:** Use airtight containers and label leftovers.
+
+        - **Get Creative:** Use scraps for broth or overripe fruits for
+        smoothies.
+
+
+        ### Fun Fact: Food waste ranks as the 3rd largest greenhouse gas
+        emitter!
+  upload:
+    heading: Share Your Zero-Waste Meal
+    description: Cook a meal from ingredients you already have or repurpose
+      leftovers. Share a photo with a caption or a short video explaining your
+      creation.
+  completion:
+    heading: Complete Your Challenge!
+    description: Reducing food waste saves resources and lowers CO₂ emissions! Your
+      effort helps prevent up to 2.5 kg of CO₂ emissions, equivalent to charging
+      a smartphone over 300 times.
+fr:
+  name: Réduire le gaspillage alimentaire
+  message: Le gaspillage alimentaire contribue grandement aux dommages
+    environnementaux. Apprenons ensemble comment réduire ce gaspillage et
+    passons à l'action!
+  overview: Le gaspillage alimentaire est un problème environnemental majeur,
+    contribuant aux émissions de gaz à effet de serre, au gaspillage d'eau et à
+    la perte de biodiversité. En réduisant notre gaspillage alimentaire, nous
+    pouvons avoir un impact significatif. Participez à ce défi pour en apprendre
+    davantage et franchir des étapes vers un mode de vie zéro déchet.
+  question:
+    heading: Auto-évaluation
+    description: À quelle fréquence jetez-vous les restes de nourriture ?
+    answers:
+      a: 🗑️ Fréquemment
+      b: ♻️ Parfois
+      c: 🧊 Rarement (Je garde les restes)
+      d: 🌱 Jamais (Je réutilise tout!)
+  education:
+    heading: L'impact du gaspillage alimentaire
+    description: Explorez l'énorme impact du gaspillage alimentaire sur notre
+      environnement et comment de simples actions peuvent faire une grande
+      différence.
+    link:
+      text: En savoir plus sur le gaspillage alimentaire
+      popup: >-
+        # L'impact du gaspillage alimentaire
+
+
+        - **Émissions de gaz à effet de serre :** La décomposition des aliments
+        dans les décharges produit du méthane, qui est 25 fois plus puissant que
+        le CO₂.
+
+        - **Gaspillage d'eau :** 2 500 litres d'eau sont nécessaires pour
+        produire 1 kg de riz. Le gaspillage équivaut à du gaspillage de
+        ressources.
+
+        - **Déforestation et perte de biodiversité :** Réduire le gaspillage
+        alimentaire diminue la demande de terres, aidant à protéger les
+        écosystèmes.
+
+
+        ## Comment vous pouvez faire la différence
+
+        - **Planifiez vos repas :** Évitez les achats impulsifs et utilisez tout
+        ce que vous achetez.
+
+        - **Conservez intelligemment :** Utilisez des contenants hermétiques et
+        étiquetez les restes.
+
+        - **Soyez créatif :** Utilisez les restes pour faire du bouillon ou les
+        fruits trop mûrs pour des smoothies.
+
+
+        ### Fait amusant : Le gaspillage alimentaire se classe au 3ème rang des
+        émetteurs de gaz à effet de serre !
+  upload:
+    heading: Partagez votre repas zéro déchet
+    description: Cuisinez un repas avec des ingrédients que vous avez déjà ou
+      réutilisez des restes. Partagez une photo avec une légende ou une courte
+      vidéo expliquant votre création.
+  completion:
+    heading: Terminez votre défi!
+    description: Réduire le gaspillage alimentaire économise des ressources et
+      diminue les émissions de CO₂ ! Votre effort contribue à prévenir jusqu'à
+      2,5 kg d'émissions de CO₂, soit l'équivalent de recharger un téléphone
+      intelligent plus de 300 fois.
