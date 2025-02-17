@@ -15,6 +15,10 @@ async function main() {
         .help()
         .parseSync();
 
+    if (!argv.context) {
+        throw new Error('Context is required')
+    }
+    
     await challenge(argv.context)
 }
 

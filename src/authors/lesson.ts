@@ -9,9 +9,14 @@ export async function lesson(context: string) {
     console.log('Kicking off the lesson generation process...')
 
     const englishLesson = await generate('englishLesson', context)
+
+    console.log(`HANDLE: ${englishLesson.handle}`)
+
     const frenchLesson = await generate('frenchLesson', JSON.stringify(englishLesson))
     const imagePrompt = await generate('imagePrompt', `# ${englishLesson.heading} \n ${englishLesson.body}`)
     const imageUrl = await image(imagePrompt.prompt)
+
+    console.log(`IMAGE: ${imageUrl}`)
 
     // TODO: Implement the image generation for the lesson card
     /* 1. Download the image from the URL */

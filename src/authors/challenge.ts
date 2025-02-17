@@ -9,9 +9,14 @@ export async function challenge(context: string) {
     console.log('Kicking off the challenge generation process...')
 
     const englishChallenge = await generate('englishChallenge', context)
+
+    console.log(`HANDLE: ${englishChallenge.handle}`)
+
     const frenchChallenge = await generate('frenchChallenge', JSON.stringify(englishChallenge))
     const imagePrompt = await generate('imagePrompt', `# ${englishChallenge.name} \n ${englishChallenge.overview}`)
     const imageUrl = await image(imagePrompt.prompt)
+
+    console.log(`IMAGE: ${imageUrl}`)
 
     // // TODO: Implement the image generation for the lesson card
     // /* 1. Download the image from the URL */
