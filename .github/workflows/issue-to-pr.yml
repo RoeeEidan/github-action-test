@@ -40,9 +40,9 @@ jobs:
           echo "LABEL=$LABEL" >> $GITHUB_ENV
           SAFE_TITLE=$(echo "${{ github.event.issue.title }}" | sed 's/\"/\\\"/g')
           SAFE_BODY=$(echo "${{ github.event.issue.body }}" | sed 's/\"/\\\"/g')
-          CONTEXT="# $SAFE_TITLE\\n\\n$SAFE_BODY"
+          CONTEXT="# $SAFE_TITLE\n\n$SAFE_BODY"
           echo "Running: yarn $LABEL with context"
-          RESULT=$(yarn "$LABEL" -- "$CONTEXT")
+          RESULT=$(yarn "$LABEL" "$CONTEXT")
           HANDLE=$(echo "$RESULT" | grep 'HANDLE: ' | cut -d' ' -f2)
           IMAGE=$(echo "$RESULT" | grep 'IMAGE: ' | cut -d' ' -f2)
           echo "CONTENT_HANDLE=$HANDLE" >> $GITHUB_ENV
@@ -70,7 +70,7 @@ jobs:
             const label = process.env.LABEL || 'content';
             const branchName = process.env.BRANCH_NAME;
             const pathnames = { lesson: 'climate-class-view', challenge: 'challenge' }
-            const prTitle = `ChatGPT \`${label}\`: ${contentHandle} for Issue #${issueNumber}`;
+            const prTitle = `ChatGPT \`${label}\`: \`${contentHandle}\` for Issue #${issueNumber}`;
             const prBody = `Resolves #${issueNumber} _Created by ChatGPT_
             
             Generated \`${label}\` with handle: \`${contentHandle}\`

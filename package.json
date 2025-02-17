@@ -7,7 +7,8 @@
     "start": "nodemon ./src/index.ts",
     "build": "tsc",
     "lesson": "node ./dist/scripts/lesson.js",
-    "challenge": "node ./dist/scripts/challenge.js"
+    "challenge": "node ./dist/scripts/challenge.js",
+    "regenerateImage": "node ./dist/scripts/regenerateImage.js"
   },
   "author": "",
   "license": "ISC",
