@@ -6,7 +6,7 @@ import { challengeTranslations } from './challenge';
 export async function translate(contentType: string, handle: string) {
 
     const start = new Date()
-    console.log('Kicking off the lesson generation process...')
+    console.log('Kicking off the translation process...')
 
     switch (contentType) {
         case 'lesson':
@@ -17,8 +17,8 @@ export async function translate(contentType: string, handle: string) {
             await writeYml(lessonPath, { ...lesson, fr })
             break;
         case 'challenge':
-            const path = `${__dirname}/../../content/challenges/${handle}.yml`
-            const { fr: __, cardImageUrl: ___, heroImageUrl: ____, en, multipleChoice, points, ...challenge } = await readYml(path)
+            const challengePath = `${__dirname}/../../content/challenges/${handle}.yml`
+            const { fr: __, cardImageUrl: ___, heroImageUrl: ____, en, multipleChoice, points, ...challenge } = await readYml(challengePath)
             if (!challenge) throw new Error(`Challenge with handle ${handle} not found`)
 
             const enChallenge = { ...en }
@@ -28,14 +28,24 @@ export async function translate(contentType: string, handle: string) {
             enChallenge.upload.points = points.upload
             enChallenge.completion.points = points.completion
 
+            console.log(JSON.stringify({
+                handle,
+                ...challenge,
+                ...enChallenge
+            }))
+
             const frChallenge = await generate('frenchChallenge', JSON.stringify({
                 handle,
                 ...challenge,
                 ...enChallenge
             }))
 
-            await writeYml(path, {
+            console.log(JSON.stringify(frChallenge))
+
+            await writeYml(challengePath, {
                 ...challenge,
+                points,
+                multipleChoice,
                 ...challengeTranslations(challenge.en, frChallenge)
             })
 
