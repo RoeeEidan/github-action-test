@@ -3,7 +3,7 @@ import { image } from '../assistants/openAi';
 import generate from '../assistants';
 import { writeYml, readYml } from './helpers';
 
-export async function reGenerateImage(contentType: string, handle: string) {
+export async function generateImage(contentType: string, handle: string) {
 
     const start = new Date()
     console.log('Kicking off the lesson generation process...')

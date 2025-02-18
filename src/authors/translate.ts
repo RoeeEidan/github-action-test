@@ -3,7 +3,7 @@ import generate from '../assistants';
 import { writeYml, readYml } from './helpers';
 import { formatChallenges } from './challenge';
 
-export async function reTranslate(contentType: string, handle: string) {
+export async function translate(contentType: string, handle: string) {
 
     const start = new Date()
     console.log('Kicking off the lesson generation process...')

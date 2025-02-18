@@ -1,5 +1,5 @@
 import yargs from 'yargs';
-import { reTranslate } from '../authors/reTranslate';
+import { generateImage } from "../authors/generateImage"
 
 if (!process.env.OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY is required')
@@ -20,12 +20,12 @@ async function main() {
         .parseSync();
 
     const { contentType: type, contentHandle: handle } = argv
-    
+
     if (!type) throw new Error('Content type is required')
     if (!handle) throw new Error('Content handle is required')
 
-    await reTranslate(type, handle)
-    console.log(`Generating a challenge for ${type} with handle ${handle}`)
+    await generateImage(type, handle)
+    console.log(`Generating a image for ${type} with handle ${handle}`)
 }
 
 

@@ -1,4 +1,4 @@
-name: Re Translate Workflow
+name: Re-Translate Workflow
 
 on:
   issue_comment:
@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   re-translate:
-    if: startsWith(github.event.comment.body, 'retranslate')
+    if: startsWith(github.event.comment.body, 'translate')
     runs-on: ubuntu-latest
 
     steps:
@@ -74,12 +74,12 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Run Re Translate Script
+      - name: Run Re-Translate Script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          echo "Running yarn reTranslate with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
-          yarn reTranslate "$CONTENT_TYPE" "$CONTENT_HANDLE"
+          echo "Running yarn translate with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
+          yarn translate "$CONTENT_TYPE" "$CONTENT_HANDLE"
 
       - name: Commit Changes with PAT Token Push
         run: |

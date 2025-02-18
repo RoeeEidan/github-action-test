@@ -8,8 +8,8 @@
     "build": "tsc",
     "lesson": "node ./dist/scripts/lesson.js",
     "challenge": "node ./dist/scripts/challenge.js",
-    "reGenerateImage": "node ./dist/scripts/reGenerateImage.js",
-    "reTranslate": "node ./dist/scripts/reTranslate.js"
+    "generateImage": "node ./dist/scripts/generateImage.js",
+    "translate": "node ./dist/scripts/translate.js"
   },
   "author": "",
   "license": "ISC",

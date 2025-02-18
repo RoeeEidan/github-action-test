@@ -106,11 +106,11 @@ jobs:
             \`\`\`
             Uses ChatGPT to re generate the image in this PR
             \`\`\`bash
-            regenerate image
+            generate image
             \`\`\`
             Uses ChatGPT to re translate the content in this PR
             \`\`\`bash
-            retranslate
+            translate
             \`\`\`
             `;
 
