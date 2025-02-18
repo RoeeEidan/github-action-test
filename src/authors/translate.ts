@@ -28,25 +28,17 @@ export async function translate(contentType: string, handle: string) {
             enChallenge.upload.points = points.upload
             enChallenge.completion.points = points.completion
 
-            console.log(JSON.stringify({
-                handle,
-                ...challenge,
-                ...enChallenge
-            }))
-
             const frChallenge = await generate('frenchChallenge', JSON.stringify({
                 handle,
                 ...challenge,
                 ...enChallenge
             }))
 
-            console.log(JSON.stringify(frChallenge))
-
             await writeYml(challengePath, {
                 ...challenge,
                 points,
                 multipleChoice,
-                ...challengeTranslations(challenge.en, frChallenge)
+                ...challengeTranslations(enChallenge, frChallenge)
             })
 
             break;
