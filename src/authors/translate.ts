@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import generate from '../assistants';
 import { writeYml, readYml } from './helpers';
-import { formatChallenges } from './challenge';
+import { challengeTranslations } from './challenge';
 
 export async function translate(contentType: string, handle: string) {
 
@@ -23,7 +23,7 @@ export async function translate(contentType: string, handle: string) {
             const frChallenge = await generate('frenchChallenge', JSON.stringify(challenge.en))
             await writeYml(path, {
                 ...challenge,
-                ...formatChallenges(challenge.en, frChallenge)
+                ...challengeTranslations(challenge.en, frChallenge)
             })
 
             break;

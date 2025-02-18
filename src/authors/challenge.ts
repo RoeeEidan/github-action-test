@@ -4,17 +4,7 @@ import generate from '../assistants';
 import { writeYml } from './helpers';
 
 type C = Awaited<ReturnType<typeof generate<'englishChallenge'>>>
-export function formatChallenges(englishChallenge: C, frenchChallenge: C) {
-    const { reduction, saving, question, education, upload, completion } = englishChallenge
-
-    const points = {
-        question: question.points,
-        education: education.points,
-        upload: upload.points,
-        completion: completion.points
-    }
-
-    const multipleChoice = question.multipleChoice
+export function challengeTranslations(englishChallenge: C, frenchChallenge: C) {
 
     const en: any = { ...englishChallenge }
     delete en.handle
@@ -37,10 +27,6 @@ export function formatChallenges(englishChallenge: C, frenchChallenge: C) {
     delete fr.completion.points
 
     return {
-        reduction,
-        saving,
-        points,
-        multipleChoice,
         en,
         fr
     }
@@ -66,12 +52,26 @@ export async function challenge(context: string) {
     // /* 2. Resize the card image  563x563 */
     // /* 3. Save both images to AWS S3 */
     // /* 4. Wrire the new lesson to a yaml file  */
+
+    const { reduction, saving, question } = englishChallenge
+    const multipleChoice = question.multipleChoice
+
     await writeYml(
         `${__dirname}/../../content/challenges/${englishChallenge.handle}.yml`,
         {
             heroImageUrl: imageUrl,
             cardImageUrl: imageUrl,
-            ...formatChallenges(englishChallenge, frenchChallenge)
+            saving,
+            reduction,
+            multipleChoice,
+            points: {
+                question: englishChallenge.question.points,
+                education: englishChallenge.education.points,
+                upload: englishChallenge.upload.points,
+                completion: englishChallenge.completion.points
+            },
+            ...challengeTranslations(englishChallenge, frenchChallenge),
+
         }
     )
 
