@@ -1,5 +1,5 @@
 import yargs from 'yargs';
-import { reGenerateImage } from '../authors/regenerateImage';
+import { reGenerateImage } from '../authors/reGenerateImage';
 
 if (!process.env.OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY is required')
