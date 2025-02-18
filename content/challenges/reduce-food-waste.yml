@@ -1,0 +1,118 @@
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-Q9C1T7l6lyda4q24HnrCpCJV.png?st=2025-02-18T00%3A07%3A17Z&se=2025-02-18T02%3A07%3A17Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T10%3A38%3A53Z&ske=2025-02-18T10%3A38%3A53Z&sks=b&skv=2024-08-04&sig=A2egLns13QF5sghr8ONb0b0CNDhqBeyrO/D/Pg%2BQ8WI%3D
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-Q9C1T7l6lyda4q24HnrCpCJV.png?st=2025-02-18T00%3A07%3A17Z&se=2025-02-18T02%3A07%3A17Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T10%3A38%3A53Z&ske=2025-02-18T10%3A38%3A53Z&sks=b&skv=2024-08-04&sig=A2egLns13QF5sghr8ONb0b0CNDhqBeyrO/D/Pg%2BQ8WI%3D
+saving: 0
+reduction: 2.5
+multipleChoice: true
+points:
+  question: 0
+  education: 400
+  upload: 100
+  completion: 100
+en:
+  name: "Reduce Food Waste: Create a Zero-Waste Meal"
+  message: Join the fight against food waste by preparing a zero-waste meal with
+    what you have at home, and earn 2,000 points!
+  overview: Food waste is a massive problem with serious environmental impacts. By
+    reducing waste, you can help lower methane emissions, conserve water, and
+    protect ecosystems. This challenge encourages you to be creative and cook a
+    meal with ingredients you already have.
+  question:
+    heading: Your habits around food waste
+    description: How often do you throw away leftover food?
+    answers:
+      a: Frequently
+      b: Sometimes
+      c: Rarely (I store leftovers)
+      d: Never (I repurpose everything!)
+  education:
+    heading: The Impact of Food Waste
+    description: Learn about the massive impact of food waste around the world and
+      what you can do to make a difference. From reducing greenhouse gas
+      emissions to conserving water, every small step counts!
+    link:
+      text: Learn more about food waste
+      popup: >-
+        * **Global Impact:** Approximately 1.3 billion tons of food are wasted
+        each year globally, enough to feed 2 billion people.
+
+        * **Methane Emission:** Decomposing food in landfills produces methane,
+        a greenhouse gas 25 times more potent than CO2.
+
+        * **Water Usage:** For instance, 2,500 liters of water are needed to
+        produce just 1 kilogram of rice, wasting food means wasting these
+        resources too.
+
+        * **Conservation Tips:** Plan your meals, store smartly, and get
+        creative with leftovers!
+
+
+        Fun Fact: If food waste were a country, it would be the 3rd largest
+        emitter of greenhouse gases after the US and China!
+  upload:
+    heading: Show us your zero-waste meal
+    description: Capture your zero-waste meal! Share a photo of your meal made
+      entirely from existing ingredients or repurposed leftovers, with a brief
+      caption on how you reduced waste, or post a short video explaining how you
+      creatively used leftovers.
+  completion:
+    heading: Complete the Zero-Waste Challenge
+    description: Congratulations on completing the zero-waste challenge! By reducing
+      food waste, you contribute to a healthier planet and save resources.
+fr:
+  name: "Réduire le gaspillage alimentaire : Créez un repas zéro déchet"
+  message: Joignez-vous à la lutte contre le gaspillage alimentaire en préparant
+    un repas zéro déchet avec ce que vous avez à la maison, et gagnez 2 000
+    points !
+  overview: Le gaspillage alimentaire est un problème énorme avec des impacts
+    environnementaux sérieux. En réduisant le gaspillage, vous pouvez aider à
+    diminuer les émissions de méthane, à économiser de l'eau, et à protéger les
+    écosystèmes. Ce défi vous encourage à être créatif et à cuisiner un repas
+    avec les ingrédients que vous avez déjà.
+  question:
+    heading: Vos habitudes concernant le gaspillage alimentaire
+    description: À quelle fréquence jetez-vous les restes de nourriture ?
+    answers:
+      a: Fréquemment
+      b: Parfois
+      c: Rarement (je conserve les restes)
+      d: Jamais (je réutilise tout !)
+  education:
+    heading: L'impact du gaspillage alimentaire
+    description: Informez-vous sur l'impact énorme du gaspillage alimentaire dans le
+      monde et sur ce que vous pouvez faire pour changer les choses. De la
+      réduction des émissions de gaz à effet de serre à la préservation de
+      l'eau, chaque petit geste compte !
+    link:
+      text: En savoir plus sur le gaspillage alimentaire
+      popup: >-
+        * **Impact mondial** : Environ 1,3 milliard de tonnes de nourriture sont
+        gaspillées chaque année dans le monde, assez pour nourrir 2 milliards de
+        personnes.
+
+        * **Émission de méthane** : La décomposition des aliments dans les
+        décharges produit du méthane, un gaz à effet de serre 25 fois plus
+        puissant que le CO2.
+
+        * **Consommation d'eau** : Par exemple, 2 500 litres d'eau sont
+        nécessaires pour produire seulement 1 kilogramme de riz, gaspiller de la
+        nourriture signifie aussi gaspiller ces ressources.
+
+        * **Conseils de conservation** : Planifiez vos repas, conservez les
+        aliments intelligemment et soyez créatif avec les restes !
+
+
+        Petite anécdote : Si le gaspillage alimentaire était un pays, ce serait
+        le 3e plus grand émetteur de gaz à effet de serre après les États-Unis
+        et la Chine !
+  upload:
+    heading: Montrez-nous votre repas zéro déchet
+    description: Capturez votre repas zéro déchet ! Partagez une photo de votre
+      repas entièrement composé d'ingrédients déjà existants ou de restes
+      réutilisés, avec une courte légende sur la façon dont vous avez réduit le
+      gaspillage, ou publiez une courte vidéo expliquant comment vous avez
+      utilisé les restes de façon créative.
+  completion:
+    heading: Relevez le défi zéro déchet
+    description: Félicitations pour avoir relevé le défi zéro déchet ! En réduisant
+      le gaspillage alimentaire, vous contribuez à un planète plus saine et
+      économisez des ressources.
