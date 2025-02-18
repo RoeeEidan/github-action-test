@@ -1,0 +1,161 @@
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-lvzXOqF6qTRHbs4HuuMHGsWQ.png?st=2025-02-18T00%3A54%3A16Z&se=2025-02-18T02%3A54%3A16Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T09%3A53%3A57Z&ske=2025-02-18T09%3A53%3A57Z&sks=b&skv=2024-08-04&sig=otsY62sigmcH232WDfHoEAm6HqDyyjzrlPSJ4uc0qMQ%3D
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-lvzXOqF6qTRHbs4HuuMHGsWQ.png?st=2025-02-18T00%3A54%3A16Z&se=2025-02-18T02%3A54%3A16Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T09%3A53%3A57Z&ske=2025-02-18T09%3A53%3A57Z&sks=b&skv=2024-08-04&sig=otsY62sigmcH232WDfHoEAm6HqDyyjzrlPSJ4uc0qMQ%3D
+saving: 0
+reduction: 2.5
+multipleChoice: true
+points:
+  question: 50
+  education: 200
+  upload: 400
+  completion: 200
+en:
+  name: Reduce Food Waste Challenge
+  message: Ready to make a delicious meal and help the planet? Join our 'Reduce
+    Food Waste' challenge and cook up something amazing with what you already
+    have at home!
+  overview: Every year, approximately 1.3 billion tons of food is wasted globally.
+    This challenge not only helps you cut down on waste but also allows you to
+    be more creative in the kitchen with the ingredients you already have.
+  question:
+    heading: Food Waste Self-Assessment
+    description: How often do you throw away leftover food?
+    answers:
+      a: 🗑️ Frequently
+      b: ♻️ Sometimes
+      c: 🧊 Rarely (I store leftovers)
+      d: 🌱 Never (I repurpose everything!)
+      e: undefined
+      f: undefined
+  education:
+    heading: Learn About Food Waste
+    description: Discover the global impact of food waste and how you can contribute
+      positively by being more resourceful with your food. When we waste food,
+      we're not only throwing away nutrition but also water and energy used to
+      produce it.
+    link:
+      text: Learn More About Food Waste
+      popup: >
+        # The Impact of Food Waste 🌎
+
+
+        Every year, around **1.3 billion tons of food** are wasted
+        globally—enough to feed **2 billion people**. But the problem goes
+        beyond hunger. Here's what you should know:
+
+
+        - **Greenhouse Gas Emissions:** Decomposing food in landfills emits
+        methane, which is **25 times more potent** than CO₂.
+
+        - **Water Waste:** Producing just 1 kg of rice requires **2,500 liters
+        of water**. Wasting food is like wasting this water.
+
+        - **Deforestation & Biodiversity Loss:** Clearing forests for
+        agriculture destroys ecosystems. Reducing waste reduces demand on land
+        and resources.
+
+
+        ## Make a Difference 💡
+
+        - **Plan Your Meals**: Avoid impulse buys; ensure you use everything
+        purchased.
+
+        - **Store Smartly**: Use airtight containers and label leftovers.
+
+        - **Be Creative**: Transform scraps into broth or overripe fruits into
+        smoothies.
+
+
+        ### Fun Fact 🧠
+
+        If food waste were a country, it would be the **3rd largest emitter of
+        greenhouse gases** after the US and China!
+  upload:
+    heading: Show Us Your Zero-Waste Meal
+    description: Create a meal from ingredients you already have at home or
+      creatively repurpose leftovers. Share a enticing photo or a short video of
+      your creation with a caption about your process and any tips for
+      minimizing waste.
+  completion:
+    heading: Complete the Food Waste Challenge
+    description: By completing this challenge, you are playing a vital role in
+      reducing food waste! Celebrate your creativity and contribution to the
+      planet.
+fr:
+  name: Défi Réduire le Gaspillage Alimentaire
+  message: Prêt à cuisiner un repas délicieux tout en aidant la planète?
+    Joignez-vous à notre défi 'Réduire le Gaspillage Alimentaire' et concoctez
+    quelque chose de formidable avec ce que vous avez déjà à la maison!
+  overview: Chaque année, environ 1,3 milliard de tonnes de nourriture sont
+    gaspillées à l'échelle mondiale. Ce défi vous aide non seulement à réduire
+    le gaspillage, mais vous permet aussi d'être plus créatif en cuisine avec
+    les ingrédients que vous avez déjà.
+  question:
+    heading: Auto-évaluation du Gaspillage Alimentaire
+    description: À quelle fréquence jetez-vous des restes de nourriture?
+    answers:
+      a: 🗑️ Fréquemment
+      b: ♻️ Parfois
+      c: 🧊 Rarement (Je conserve les restes)
+      d: 🌱 Jamais (Je réutilise tout !)
+      e: undefined
+      f: undefined
+  education:
+    heading: Apprenez sur le Gaspillage Alimentaire
+    description: Découvrez l'impact mondial du gaspillage alimentaire et comment
+      vous pouvez contribuer positivement en étant plus ingénieux avec votre
+      nourriture. En gaspillant de la nourriture, nous ne jetons pas seulement
+      des nutriments, mais aussi de l'eau et de l'énergie utilisées pour la
+      produire.
+    link:
+      text: En savoir plus sur le gaspillage alimentaire
+      popup: >-
+        # L'Impact du Gaspillage Alimentaire 🌎
+
+
+        Chaque année, environ **1,3 milliard de tonnes de nourriture** sont
+        gaspillées à l'échelle mondiale—suffisant pour nourrir **2 milliards de
+        personnes**. Mais le problème va au-delà de la faim. Voici ce que vous
+        devez savoir:
+
+
+        - **Émissions de Gaz à Effet de Serre:** La décomposition des aliments
+        dans les décharges émet du méthane, qui est **25 fois plus puissant**
+        que le CO₂.
+
+        - **Gaspillage d'Eau:** Produire seulement 1 kg de riz nécessite **2 500
+        litres d'eau**. Gaspiller de la nourriture équivaut à gaspiller cette
+        eau.
+
+        - **Déforestation & Perte de Biodiversité:** Défricher des forêts pour
+        l'agriculture détruit les écosystèmes. Réduire le gaspillage diminue la
+        demande sur les terres et les ressources.
+
+
+        ## Faire la Différence 💡
+
+        - **Planifiez vos Repas**: Évitez les achats impulsifs; assurez-vous
+        d'utiliser tout ce que vous achetez.
+
+        - **Entreposez Intelligemment**: Utilisez des contenants hermétiques et
+        étiquetez les restes.
+
+        - **Soyez Créatif**: Transformez les restes en bouillon ou les fruits
+        trop mûrs en smoothies.
+
+
+        ### Fait Amusant 🧠
+
+        Si le gaspillage alimentaire était un pays, il serait le **3ème plus
+        grand émetteur de gaz à effet de serre** après les États-Unis et la
+        Chine!
+  upload:
+    heading: Montrez-nous votre Repas Zéro Déchet
+    description: Créez un repas à partir des ingrédients que vous avez déjà à la
+      maison ou réutilisez de façon créative les restes. Partagez une photo
+      alléchante ou une courte vidéo de votre création avec une légende sur
+      votre procédé et des astuces pour minimiser le gaspillage.
+  completion:
+    heading: Complétez le Défi du Gaspillage Alimentaire
+    description: En complétant ce défi, vous jouez un rôle essentiel dans la
+      réduction du gaspillage alimentaire! Célébrez votre créativité et votre
+      contribution à la planète.
