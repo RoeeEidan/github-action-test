@@ -36,8 +36,8 @@ export async function translate(contentType: string, handle: string) {
 
             await writeYml(challengePath, {
                 ...challenge,
-                points,
                 multipleChoice,
+                points,
                 ...challengeTranslations(enChallenge, frChallenge)
             })
 
