@@ -78,6 +78,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
+          set -e
           echo "Running yarn translate with content type: $CONTENT_TYPE and handle: $CONTENT_HANDLE"
           yarn translate "$CONTENT_TYPE" "$CONTENT_HANDLE"
 
