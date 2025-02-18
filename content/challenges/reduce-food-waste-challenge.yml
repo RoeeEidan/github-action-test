@@ -1,13 +1,6 @@
 heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-IIFx1IDHQF6Ui0OGeT0LeiPh.png?st=2025-02-17T23%3A56%3A28Z&se=2025-02-18T01%3A56%3A28Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T05%3A39%3A10Z&ske=2025-02-18T05%3A39%3A10Z&sks=b&skv=2024-08-04&sig=OfpzU4O62RlTU3rsUYqwpM4/g1wvIzZ1gcdZf3AEFas%3D
 cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-IIFx1IDHQF6Ui0OGeT0LeiPh.png?st=2025-02-17T23%3A56%3A28Z&se=2025-02-18T01%3A56%3A28Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T05%3A39%3A10Z&ske=2025-02-18T05%3A39%3A10Z&sks=b&skv=2024-08-04&sig=OfpzU4O62RlTU3rsUYqwpM4/g1wvIzZ1gcdZf3AEFas%3D
-reduction: 2.5
-saving: 0
-points:
-  question: 100
-  education: 200
-  upload: 150
-  completion: 50
-multipleChoice: false
+points: {}
 en:
   name: Stop throwing food to the trash!
   message: Join our challenge to reduce food waste and make a positive impact on
@@ -79,78 +72,79 @@ en:
     description: Awesome! You've completed the food waste reduction challenge and
       made a positive impact.
 fr:
-  name: Défi Réduire le Gaspillage Alimentaire
-  message: Rejoignez notre défi pour réduire le gaspillage alimentaire et avoir un
-    impact positif sur la planète!
-  overview: Le gaspillage alimentaire est un enjeu mondial immense, contribuant
-    non seulement à la faim mais aussi à des préoccupations environnementales
+  name: Arrêtez de jeter de la nourriture à la poubelle !
+  message: Participez à notre défi pour réduire le gaspillage alimentaire et avoir
+    un impact positif sur la planète !
+  overview: Le gaspillage alimentaire est un problème mondial immense, contribuant
+    non seulement à la faim, mais aussi à des préoccupations environnementales
     significatives. En minimisant le gaspillage alimentaire, vous pouvez réduire
     les émissions de gaz à effet de serre et conserver des ressources précieuses
-    telles que l'eau et la terre. Ce défi vous encourage à utiliser ce que vous
-    avez de manière créative et à réduire votre empreinte de gaspillage.
+    comme l'eau et la terre. Ce défi vous encourage à utiliser ce que vous avez
+    de façon créative et à réduire votre empreinte de gaspillage.
   question:
     heading: Habitudes de Gaspillage Alimentaire
-    description: À quelle fréquence jetez-vous des restes de repas?
+    description: À quelle fréquence jetez-vous les restes de nourriture ?
     answers:
       a: Fréquemment
       b: Parfois
-      c: Rarement (je conserve les restes)
-      d: Jamais (je réutilise tout!)
+      c: Rarement (Je conserve les restes)
+      d: Jamais (Je réutilise tout!)
   education:
-    heading: L'Impact du Gaspillage Alimentaire
+    heading: L'impact du Gaspillage Alimentaire
     description: Découvrez comment le gaspillage alimentaire affecte l'environnement
       et ce que vous pouvez faire pour faire la différence.
     link:
-      text: En savoir plus
+      text: En Savoir Plus
+      url: null
       popup: >-
-        ### 🌎 L'Impact du Gaspillage Alimentaire
+        ### 🌎 L'impact du Gaspillage Alimentaire
 
 
         Chaque année, environ **1,3 milliard de tonnes de nourriture** sont
-        gaspillées dans le monde—suffisant pour nourrir **2 milliards de
+        gaspillées dans le monde—suffisamment pour nourrir **2 milliards de
         personnes**. Mais le problème va au-delà de la faim. Le gaspillage
-        alimentaire a de graves conséquences environnementales:
+        alimentaire a de graves conséquences environnementales :
 
 
-        - **Émissions de Gaz à Effet de Serre:** Lorsque les aliments se
+        - **Émissions de Gaz à Effet de Serre :** Lorsque les aliments se
         décomposent dans les décharges, ils produisent du méthane, un gaz à
         effet de serre **25 fois plus puissant** que le CO₂.
 
-        - **Gaspillage d'Eau:** Il faut **2 500 litres d'eau** pour produire
+        - **Gaspillage d'Eau :** Il faut **2 500 litres d'eau** pour produire
         seulement 1 kilogramme de riz. Quand nous gaspillons de la nourriture,
         nous gaspillons aussi les ressources utilisées pour la produire.
 
-        - **Déforestation & Perte de Biodiversité:** D'immenses superficies de
+        - **Déforestation & Perte de Biodiversité :** De vastes régions de
         forêts sont défrichées pour l'agriculture. Réduire le gaspillage
-        alimentaire aide à réduire la demande en terres et protège les
+        alimentaire aide à réduire la demande de terres et protège les
         écosystèmes.
 
 
         ### 💡 Comment Vous Pouvez Faire la Différence
 
-        - **Planifiez Vos Repas:** Réduisez les achats impulsifs et assurez-vous
-        d'utiliser tout ce que vous achetez.
+        - **Planifiez Vos Repas :** Réduisez les achats impulsifs et
+        assurez-vous d'utiliser tout ce que vous achetez.
 
-        - **Rangez Intelligemment:** Utilisez des contenants hermétiques et
+        - **Stockez Intelligemment :** Utilisez des contenants hermétiques et
         étiquetez les restes avec des dates.
 
-        - **Soyez Créatif:** Transformez les restes de légumes en bouillon ou
+        - **Soyez Créatif :** Transformez les restes de légumes en bouillon ou
         les fruits trop mûrs en smoothies.
 
 
-        ### 🧠 Fait Amusant:
+        ### 🧠 Fait Amusant :
 
         Si le gaspillage alimentaire était un pays, il serait le **3ème plus
-        grand émetteur de gaz à effet de serre** après les Etats-Unis et la
-        Chine!
+        grand émetteur de gaz à effet de serre** après les États-Unis et la
+        Chine !
   upload:
-    heading: Preuve de Repas Zéro Déchet
-    description: Cuisinez un repas entièrement avec des ingrédients que vous avez
-      déjà à la maison ou réutilisez des restes. Partagez une photo de votre
-      repas zéro déchet avec une courte légende sur comment vous avez réduit le
-      gaspillage, ou postez une courte vidéo expliquant comment vous avez
-      utilisé les restes de manière créative.
+    heading: Preuve de Repas Zero Déchet
+    description: Cuisinez un repas entièrement à partir d'ingrédients que vous avez
+      déjà chez vous ou réutilisez des restes. Partagez une photo de votre repas
+      zéro déchet avec une brève légende sur la façon dont vous avez réduit le
+      gaspillage, ou publiez une courte vidéo expliquant comment vous avez
+      créativement utilisé les restes d'ingrédients.
   completion:
-    heading: Défi Terminé!
-    description: Génial! Vous avez complété le défi de réduction du gaspillage
+    heading: Défi Terminé !
+    description: Génial ! Vous avez complété le défi de réduction du gaspillage
       alimentaire et avez eu un impact positif.
