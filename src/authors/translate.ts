@@ -18,9 +18,9 @@ export async function translate(contentType: string, handle: string) {
             break;
         case 'challenge':
             const path = `${__dirname}/../../content/challenges/${handle}.yml`
-            const challenge = await readYml(path)
+            const { fr: __, ...challenge } = await readYml(path)
             if (!challenge) throw new Error(`Challenge with handle ${handle} not found`)
-            const frChallenge = await generate('frenchChallenge', JSON.stringify(challenge.en))
+            const frChallenge = await generate('frenchChallenge', JSON.stringify(challenge))
             await writeYml(path, {
                 ...challenge,
                 ...challengeTranslations(challenge.en, frChallenge)
