@@ -1,13 +1,6 @@
 heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-2Sq5IwyAyFfvtolzAjCU1Ejn.png?st=2025-02-17T23%3A11%3A20Z&se=2025-02-18T01%3A11%3A20Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T22%3A02%3A24Z&ske=2025-02-18T22%3A02%3A24Z&sks=b&skv=2024-08-04&sig=KMXCYJyO3ThH/HtLk3GP1OPpICCFSJpdRFz/Mlc6GWw%3D
 cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-2Sq5IwyAyFfvtolzAjCU1Ejn.png?st=2025-02-17T23%3A11%3A20Z&se=2025-02-18T01%3A11%3A20Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T22%3A02%3A24Z&ske=2025-02-18T22%3A02%3A24Z&sks=b&skv=2024-08-04&sig=KMXCYJyO3ThH/HtLk3GP1OPpICCFSJpdRFz/Mlc6GWw%3D
-reduction: 2.5
-saving: 0
-points:
-  question: 50
-  education: 100
-  upload: 200
-  completion: 200
-multipleChoice: false
+points: {}
 en:
   name: Reduce Food Waste at Home
   message: Every year, 1.3 billion tons of food are wasted globally! 🌍 Take our
@@ -62,31 +55,30 @@ en:
       showcasing your creativity in the kitchen!
 fr:
   name: Réduire le gaspillage alimentaire à la maison
-  message: Chaque année, 1,3 milliard de tonnes de nourriture sont gaspillées dans
-    le monde! 🌍 Relevez notre défi amusant pour réduire votre gaspillage
-    alimentaire et avoir un impact environnemental positif directement depuis
-    votre cuisine!
-  overview: Joignez-vous au mouvement visant à minimiser le gaspillage alimentaire
-    et ses effets néfastes sur l'environnement. En utilisant ce que vous avez et
-    en réutilisant de manière créative les restes, vous contribuez non seulement
-    aux efforts mondiaux contre la faim et le changement climatique, mais vous
-    faites également durer votre budget d'épicerie.
+  message: Chaque année, 1,3 milliard de tonnes de nourriture sont gaspillées à
+    l'échelle mondiale ! 🌍 Participez à notre défi amusant pour réduire votre
+    gaspillage alimentaire et avoir un grand impact environnemental directement
+    depuis votre cuisine !
+  overview: Joignez-vous au mouvement pour minimiser le gaspillage alimentaire et
+    ses effets néfastes sur l'environnement. En utilisant ce que vous avez et en
+    réutilisant créativement les restes, vous contribuez non seulement aux
+    efforts mondiaux contre la faim et le changement climatique, mais vous
+    étirez aussi votre budget d'épicerie.
   question:
-    heading: Auto-évaluation du gaspillage alimentaire
-    description: À quelle fréquence jetez-vous les restes alimentaires?
+    heading: Auto-évaluation sur le gaspillage alimentaire
+    description: À quelle fréquence jetez-vous des restes de nourriture ?
     answers:
-      a: 🗑️ Fréquemment
+      a: 🗑️ Souvent
       b: ♻️ Parfois
       c: 🧊 Rarement (Je conserve les restes)
-      d: 🌱 Jamais (Je réutilise tout!)
+      d: 🌱 Jamais (Je réutilise tout !)
       e: null
       f: null
   education:
     heading: Comprendre l'impact du gaspillage alimentaire
-    description: Découvrez les faits sur le gaspillage alimentaire et ses impacts
-      plus larges sur notre planète. Apprenez comment les aliments gaspillés
-      contribuent aux émissions de gaz à effet de serre et affectent les
-      ressources.
+    description: Explorez les faits sur le gaspillage alimentaire et ses impacts
+      plus larges sur notre planète. Apprenez comment la nourriture gaspillée
+      contribue aux émissions de gaz à effet de serre et affecte les ressources.
     link:
       text: En savoir plus sur le gaspillage alimentaire
       popup: >-
@@ -96,26 +88,26 @@ fr:
         - **Gaspillage alimentaire mondial :** Plus de 1,3 milliard de tonnes de
         nourriture sont gaspillées chaque année dans le monde.
 
-        - **Conséquences environnementales :** Les aliments en décomposition
-        produisent du méthane, un gaz à effet de serre 25 fois plus puissant que
-        le CO₂.
+        - **Conséquences environnementales :** La nourriture en décomposition
+        produit du méthane, un gaz à effet de serre 25 fois plus puissant que le
+        CO₂.
 
-        - **Gaspillage des ressources :** Le gaspillage alimentaire entraîne
-        également le gaspillage de l'eau, de l'énergie et des terres utilisées
-        pour le produire.
+        - **Gaspillage des ressources :** Gaspiller de la nourriture, c'est
+        aussi gaspiller l'eau, l'énergie et les terres utilisées pour la
+        produire.
 
 
-        **Fait intéressant :** Si le gaspillage alimentaire était un pays, ce
-        serait le 3e plus gros émetteur de gaz à effet de serre après les
-        États-Unis et la Chine.
+        **Fait amusant :** Si le gaspillage alimentaire était un pays, il serait
+        le 3ème plus grand émetteur de gaz à effet de serre après les États-Unis
+        et la Chine.
   upload:
-    heading: Exposez votre repas zéro déchet
+    heading: Montrez votre repas zéro déchet
     description: Cuisinez un repas en utilisant des ingrédients que vous avez déjà
-      ou réutilisez de manière créative les restes. Téléchargez une photo ou une
-      vidéo de votre création zéro déchet avec une brève explication de votre
-      processus.
+      ou en réutilisant de manière créative des restes. Téléchargez une photo ou
+      une vidéo de votre création zéro déchet avec une brève explication de
+      votre processus.
   completion:
     heading: Complétion du défi
     description: Vous avez réussi à réduire le gaspillage alimentaire en créant un
       repas zéro déchet. Bravo pour avoir eu un impact positif sur
-      l'environnement et démontré votre créativité en cuisine!
+      l'environnement et pour avoir démontré votre créativité en cuisine !
