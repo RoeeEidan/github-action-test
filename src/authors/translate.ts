@@ -18,7 +18,7 @@ export async function translate(contentType: string, handle: string) {
             break;
         case 'challenge':
             const challengePath = `${__dirname}/../../content/challenges/${handle}.yml`
-            const { fr: __, cardImageUrl: ___, heroImageUrl: ____, en, multipleChoice, points, ...challenge } = await readYml(challengePath)
+            const { fr: __, cardImageUrl, heroImageUrl, en, multipleChoice, points, ...challenge } = await readYml(challengePath)
             if (!challenge) throw new Error(`Challenge with handle ${handle} not found`)
 
             const enChallenge = { ...en }
@@ -35,6 +35,8 @@ export async function translate(contentType: string, handle: string) {
             }))
 
             await writeYml(challengePath, {
+                heroImageUrl,
+                cardImageUrl, 
                 ...challenge,
                 multipleChoice,
                 points,
