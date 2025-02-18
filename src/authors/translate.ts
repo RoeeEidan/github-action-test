@@ -13,14 +13,26 @@ export async function translate(contentType: string, handle: string) {
             const lessonPath = `${__dirname}/../../content/lessons/${handle}.yml`
             const lesson = await readYml(lessonPath)
             if (!lesson) throw new Error(`Lesson with handle ${handle} not found`)
-            const { handle: _, ...fr } = await generate('frenchLesson', JSON.stringify(lesson.en))
+            const { handle: _, ...fr } = await generate('frenchLesson', JSON.stringify({ handle, ...lesson.en }))
             await writeYml(lessonPath, { ...lesson, fr })
             break;
         case 'challenge':
             const path = `${__dirname}/../../content/challenges/${handle}.yml`
             const { fr: __, ...challenge } = await readYml(path)
             if (!challenge) throw new Error(`Challenge with handle ${handle} not found`)
-            const frChallenge = await generate('frenchChallenge', JSON.stringify(challenge))
+
+            const enChallenge = { ...challenge.en }
+            enChallenge.question.multipleChoice = challenge.multipleChoice
+            enChallenge.question.points = challenge.points.question
+            enChallenge.education.points = challenge.points.education
+            enChallenge.upload.points = challenge.points.upload
+            enChallenge.completion.points = challenge.points.completion
+
+            const frChallenge = await generate('frenchChallenge', JSON.stringify({
+                handle,
+                ...enChallenge
+            }))
+
             await writeYml(path, {
                 ...challenge,
                 ...challengeTranslations(challenge.en, frChallenge)
