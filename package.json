@@ -8,7 +8,7 @@
     "build": "tsc",
     "lesson": "node ./dist/scripts/lesson.js",
     "challenge": "node ./dist/scripts/challenge.js",
-    "regenerateImage": "node ./dist/scripts/regenerateImage.js",
+    "reGenerateImage": "node ./dist/scripts/reGenerateImage.js",
     "reTranslate": "node ./dist/scripts/reTranslate.js"
   },
   "author": "",

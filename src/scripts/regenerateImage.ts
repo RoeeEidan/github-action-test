@@ -1,5 +1,5 @@
 import yargs from 'yargs';
-import { regenerateImage } from '../authors/regenerateImage';
+import { reGenerateImage } from '../authors/regenerateImage';
 
 if (!process.env.OPENAI_API_KEY) {
     throw new Error('OPENAI_API_KEY is required')
@@ -24,7 +24,7 @@ async function main() {
     if (!type) throw new Error('Content type is required')
     if (!handle) throw new Error('Content handle is required')
 
-    await regenerateImage(type, handle)
+    await reGenerateImage(type, handle)
     console.log(`Generating a image for ${type} with handle ${handle}`)
 }
 
