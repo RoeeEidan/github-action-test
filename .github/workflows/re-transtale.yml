@@ -27,7 +27,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
-              body: `Translating the content in [This GitHub Action Run](${runUrl}), should be ready in about 30s.`
+              body: `⚙️ Translating the content in [This GitHub Action Run](${runUrl}), should be ready in about 30s.`
             });
 
       - name: Checkout Repository

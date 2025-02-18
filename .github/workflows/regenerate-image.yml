@@ -27,7 +27,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
-              body: `Re-generating the image in [This GitHub Action Run](${runUrl}), should be ready in about 45s.`
+              body: `⚙️ Re-generating the image in [This GitHub Action Run](${runUrl}), should be ready in about 45s.`
             });
 
       - name: Checkout Repository
