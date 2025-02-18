@@ -1,0 +1,165 @@
+heroImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-mWmdA1uclMbgaeEe8NvG7EpS.png?st=2025-02-18T00%3A16%3A26Z&se=2025-02-18T02%3A16%3A26Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T18%3A56%3A05Z&ske=2025-02-18T18%3A56%3A05Z&sks=b&skv=2024-08-04&sig=I9EIQ/VXw%2BVcyM3QGBlN97YIdqf/RpsKjroxQftGc%2Bw%3D
+cardImageUrl: https://oaidalleapiprodscus.blob.core.windows.net/private/org-X4zE7fLmeZuZ2hhaAHOEU7C0/user-BcyvLa6hfWYX0q6OY5Iq3CSu/img-mWmdA1uclMbgaeEe8NvG7EpS.png?st=2025-02-18T00%3A16%3A26Z&se=2025-02-18T02%3A16%3A26Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-17T18%3A56%3A05Z&ske=2025-02-18T18%3A56%3A05Z&sks=b&skv=2024-08-04&sig=I9EIQ/VXw%2BVcyM3QGBlN97YIdqf/RpsKjroxQftGc%2Bw%3D
+saving: 0
+reduction: 2.5
+multipleChoice: false
+points:
+  question: 100
+  education: 400
+  upload: 100
+  completion: 100
+en:
+  name: "Reduce Food Waste Challenge: Cook with What You Have"
+  message: Join the fight against food waste by cooking a meal with ingredients
+    you have at home! Let's make a positive impact on our planet together. 🌎✨
+  overview: Embrace the challenge of reducing food waste by creatively using
+    what's already in your kitchen! Not only does this help conserve resources,
+    but it also reduces greenhouse gases. Dive into this fun and impactful
+    challenge to create a delicious meal with leftovers or soon-to-expire
+    ingredients.
+  question:
+    heading: Reflect on Your Food Waste Habits
+    description: How often do you throw away leftover food?
+    answers:
+      a: 🗑️ Frequently
+      b: ♻️ Sometimes
+      c: 🧊 Rarely (I store leftovers)
+      d: 🌱 Never (I repurpose everything!)
+      e: undefined
+      f: undefined
+  education:
+    heading: Discover the Impact of Food Waste
+    description: Learn about the massive impact food waste has on our planet. From
+      greenhouse gas emissions to water waste and deforestation, the
+      consequences are vast. Find out how you can make a difference with simple
+      changes in your everyday life.
+    link:
+      text: Learn More About Food Waste
+      popup: >-
+        # 🌎 The Impact of Food Waste 
+
+        Every year, around **1.3 billion tons of food** are wasted
+        globally—enough to feed **2 billion people**. But the problem goes
+        beyond hunger. Food waste has severe environmental consequences:
+
+
+        - **Greenhouse Gas Emissions:** When food decomposes in landfills, it
+        produces methane, a greenhouse gas **25 times more potent** than CO₂.
+
+        - **Water Waste:** It takes **2,500 liters of water** to produce just 1
+        kilogram of rice. When we waste food, we also waste the resources used
+        to produce it.
+
+        - **Deforestation & Biodiversity Loss:** Vast areas of forests are
+        cleared for agriculture. Reducing food waste helps reduce the demand for
+        land and protects ecosystems.
+
+
+        ## 💡 How You Can Make a Difference
+
+        - **Plan Your Meals:** Reduce impulse buys and ensure you use everything
+        you purchase.
+
+        - **Store Smartly:** Use airtight containers and label leftovers with
+        dates.
+
+        - **Get Creative:** Turn vegetable scraps into broth or overripe fruits
+        into smoothies.
+
+
+        ### 🧠 Fun Fact:
+
+        If food waste were a country, it would be the **3rd largest emitter of
+        greenhouse gases** after the US and China!
+  upload:
+    heading: Showcase Your Zero-Waste Meal
+    description: Cook a meal using leftovers or ingredients you already have at
+      home. Share a photo of your creation with a caption on how you reduced
+      waste, or post a short video explaining how you used leftover ingredients
+      creatively. Let's inspire others with your zero-waste efforts!
+  completion:
+    heading: Celebrate Your Impact
+    description: Congratulations on completing the Reduce Food Waste Challenge! By
+      using leftovers and soon-to-expire ingredients, you've helped conserve
+      resources and reduce emissions. Well done!
+fr:
+  name: "Défi Réduction du Gaspillage Alimentaire : Cuisinez avec Ce Que Vous Avez"
+  message: Joignez-vous à la lutte contre le gaspillage alimentaire en cuisinant
+    un repas avec les ingrédients que vous avez à la maison ! Faisons ensemble
+    un impact positif sur notre planète. 🌎✨
+  overview: Relevez le défi de réduire le gaspillage alimentaire en utilisant
+    créativement ce qui est déjà dans votre cuisine ! Non seulement cela aide à
+    conserver les ressources, mais cela réduit aussi les gaz à effet de serre.
+    Plongez dans cet amusant et impactant défi pour créer un repas délicieux
+    avec des restes ou des ingrédients qui vont bientôt expirer.
+  question:
+    heading: Réfléchissez à Vos Habitudes de Gaspillage Alimentaire
+    description: À quelle fréquence jetez-vous des restes de nourriture ?
+    answers:
+      a: 🗑️ Fréquemment
+      b: ♻️ Parfois
+      c: 🧊 Rarement (Je conserve les restes)
+      d: 🌱 Jamais (Je réutilise tout!)
+      e: undefined
+      f: undefined
+  education:
+    heading: Découvrez l'Impact du Gaspillage Alimentaire
+    description: Apprenez-en plus sur l'impact majeur que peut avoir le gaspillage
+      alimentaire sur notre planète. Des émissions de gaz à effet de serre au
+      gaspillage d'eau et à la déforestation, les conséquences sont vastes.
+      Découvrez comment vous pouvez faire une différence avec de simples
+      changements dans votre vie quotidienne.
+    link:
+      text: En savoir plus sur le gaspillage alimentaire
+      popup: >-
+        # 🌎 L'Impact du Gaspillage Alimentaire
+
+        Chaque année, environ **1.3 milliard de tonnes de nourriture** sont
+        gaspillées dans le monde—suffisamment pour nourrir **2 milliards de
+        personnes**. Mais le problème va au-delà de la faim. Le gaspillage
+        alimentaire a de graves conséquences environnementales :
+
+
+        - **Émissions de gaz à effet de serre :** Quand la nourriture se
+        décompose dans les décharges, elle produit du méthane, un gaz à effet de
+        serre **25 fois plus puissant** que le CO₂.
+
+        - **Gaspillage d'eau :** Il faut **2 500 litres d'eau** pour produire
+        seulement 1 kilogramme de riz. Quand nous gaspillons de la nourriture,
+        nous gaspillons aussi les ressources utilisées pour la produire.
+
+        - **Déforestation & Perte de biodiversité :** De vastes zones de forêts
+        sont défrichées pour l'agriculture. Réduire le gaspillage alimentaire
+        aide à réduire la demande de terres et protège les écosystèmes.
+
+
+        ## 💡 Comment Vous Pouvez Faire une Différence
+
+        - **Planifiez Vos Repas :** Réduisez les achats impulsifs et
+        assurez-vous d'utiliser tout ce que vous achetez.
+
+        - **Conservez Intelligemment :** Utilisez des contenants hermétiques et
+        étiquetez les restes avec des dates.
+
+        - **Soyez Créatif :** Transformez les restes de légumes en bouillon ou
+        les fruits trop mûrs en smoothies.
+
+
+        ### 🧠 Fait Amusant :
+
+        Si le gaspillage alimentaire était un pays, ce serait le **3ème plus
+        grand émetteur de gaz à effet de serre** après les États-Unis et la
+        Chine!
+  upload:
+    heading: Montrez Votre Repas Zéro Déchet
+    description: Cuisinez un repas en utilisant des restes ou des ingrédients que
+      vous avez déjà chez vous. Partagez une photo de votre création avec une
+      légende sur la façon dont vous avez réduit les déchets, ou publiez une
+      courte vidéo expliquant comment vous avez utilisé les restes de manière
+      créative. Inspirons les autres avec vos efforts zéro déchet !
+  completion:
+    heading: Célébrez Votre Impact
+    description: Félicitations pour avoir complété le Défi Réduction du Gaspillage
+      Alimentaire ! En utilisant des restes et des ingrédients qui vont bientôt
+      expirer, vous avez aidé à conserver les ressources et à réduire les
+      émissions. Bravo !
