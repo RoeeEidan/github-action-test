@@ -1,10 +1,6 @@
 import yargs from 'yargs';
 import { setImage } from "../authors/setImage"
 
-if (!process.env.OPENAI_API_KEY) {
-    throw new Error('OPENAI_API_KEY is required')
-}
-
 async function main() {
     const argv = yargs.command('$0 <handle> <url>', 'Generate a challenge')
         .usage(`$0 <handle> <url>`)

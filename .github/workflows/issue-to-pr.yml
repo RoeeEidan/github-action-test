@@ -108,6 +108,10 @@ jobs:
             \`\`\`bash
             generate image
             \`\`\`
+            Sets the image for this PR
+            \`\`\`bash
+            set image <URL>
+            \`\`\`
             Uses ChatGPT to re translate the content in this PR
             \`\`\`bash
             translate

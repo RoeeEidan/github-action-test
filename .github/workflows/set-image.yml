@@ -50,6 +50,9 @@ jobs:
 
           git fetch origin "$BRANCH_NAME"
           git checkout "$BRANCH_NAME"
+          
+          CONTENT_HANDLE=$(echo "$BRANCH_NAME" | awk -F'/' '{print $4}')
+          echo "CONTENT_HANDLE=$CONTENT_HANDLE" >> $GITHUB_ENV
 
       - name: Install Dependencies
         run: yarn install
@@ -60,7 +63,7 @@ jobs:
       - name: Run Set Image Script
         run: |
           echo "Running yarn setImage with URL: $IMAGE_URL"
-          yarn setImage "$IMAGE_URL"
+          yarn setImage "$CONTENT_HANDLE" "$IMAGE_URL"
 
       - name: Commit & Push Changes
         run: |
