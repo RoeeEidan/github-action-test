@@ -9,6 +9,7 @@
     "lesson": "node ./dist/scripts/lesson.js",
     "challenge": "node ./dist/scripts/challenge.js",
     "generateImage": "node ./dist/scripts/generateImage.js",
+    "setImage": "node ./dist/scripts/setImage.js",
     "translate": "node ./dist/scripts/translate.js"
   },
   "author": "",
