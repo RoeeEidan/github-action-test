@@ -65,7 +65,7 @@ jobs:
 
       - name: Run Set Image Script
         run: |
-          echo "Running yarn setImage with URL: $IMAGE_URL"
+          echo "Running yarn setImage with CONTENT_TYPE=$CONTENT_TYPE, CONTENT_HANDLE=$CONTENT_HANDLE, IMAGE_URL=$IMAGE_URL"
           
           RESULT=$(yarn setImage "$CONTENT_TYPE" "$CONTENT_HANDLE" "$IMAGE_URL")
           echo "$RESULT"
