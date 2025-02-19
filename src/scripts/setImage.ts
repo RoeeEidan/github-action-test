@@ -2,8 +2,12 @@ import yargs from 'yargs';
 import { setImage } from "../authors/setImage"
 
 async function main() {
-    const argv = yargs.command('$0 <handle> <url>', 'Generate a challenge')
-        .usage(`$0 <handle> <url>`)
+    const argv = yargs.command('$0 <type> <handle> <url>', 'Generate a challenge')
+        .usage(`$0 <type> <handle> <url>`)
+        .positional('type', {
+            type: 'string',
+            describe: 'The type of content to generate the challenge for',
+        })
         .positional('handle', {
             type: 'string',
             describe: 'The type of content to generate the challenge for',
@@ -15,12 +19,13 @@ async function main() {
         .help()
         .parseSync();
 
-    const { handle, url } = argv
+    const { handle, url, type } = argv
 
+    if (!type) throw new Error('Content type is required')
     if (!url) throw new Error('Content tyurlpe is required')
     if (!handle) throw new Error('Content handle is required')
 
-    await setImage(handle, url)
+    await setImage(type, handle, url)
 }
 
 
