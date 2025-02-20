@@ -44,6 +44,19 @@ export async function translate(contentType: string, handle: string) {
             })
 
             break;
+        case 'quiz':
+            const quizPath = `${__dirname}/../../content/quizzes/${handle}.yml`
+            const quiz = await readYml(quizPath)
+            if (!quiz) throw new Error(`Quiz with handle ${handle} not found`)
+                const { handle: ____, sourceUrl: _____, correctAnswer: ______, ...frQuiz } = await generate('frenchQuiz', JSON.stringify(quiz))
+            const { handle: ___, sourceUrl, correctAnswer, ...enQuiz } = quiz
+            await writeYml(quizPath, {
+                sourceUrl,
+                correctAnswer,
+                en: enQuiz,
+                fr: frQuiz
+            })
+            break
         default:
             throw new Error(`Content type ${contentType} is not allowed`)
     }

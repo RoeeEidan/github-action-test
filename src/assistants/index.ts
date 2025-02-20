@@ -59,11 +59,27 @@ const challenge = z.object({
     })
 })
 
+const quiz = z.object({
+    handle: z.string(),
+    question: z.string(),
+    answers : z.object({
+        a: z.string(),
+        b: z.string(),
+        c: z.string(),
+        d: z.string()
+    }),
+    sourceUrl: z.string(),
+    topic: z.string(),
+    correctAnswer: z.enum(['a', 'b', 'c', 'd']),
+})
+
 const schema = {
     englishLesson: lesson,
     frenchLesson: lesson,
     englishChallenge: challenge,
     frenchChallenge: challenge,
+    englishQuiz: quiz,
+    frenchQuiz: quiz,
     imagePrompt: z.object({
         prompt: z.string()
     })

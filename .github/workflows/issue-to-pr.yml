@@ -84,7 +84,7 @@ jobs:
             const image = process.env.CONTENT_IMAGE || 'N/A';
             const label = process.env.LABEL || 'content';
             const branchName = process.env.BRANCH_NAME;
-            const pathnames = { lesson: 'climate-class-view', challenge: 'challenge' }
+            const pathnames = { lesson: 'climate-class-view', challenge: 'challenge', quiz: 'quiz' };
             const prTitle = `ChatGPT \`${label}\`: \`${contentHandle}\` for Issue #${issueNumber}`;
             const prBody = `Resolves #${issueNumber} _Created by ChatGPT_
             
@@ -104,14 +104,20 @@ jobs:
             \`\`\`bash
             stageit
             \`\`\`
-            Uses ChatGPT to re generate the image in this PR
-            \`\`\`bash
-            generate image
-            \`\`\`
-            Sets the image for this PR
-            \`\`\`bash
-            set image <URL>
-            \`\`\`
+            ${ 
+              label === 'lesson' || label === 'challenge' 
+                ? `
+                    Uses ChatGPT to re generate the image in this PR
+                    \`\`\`bash
+                    generate image
+                    \`\`\`
+                    Sets the image for this PR
+                    \`\`\`bash
+                    set image <URL>
+                    \`\`\`
+                  ` 
+                : ``
+            }
             Uses ChatGPT to re translate the content in this PR
             \`\`\`bash
             translate

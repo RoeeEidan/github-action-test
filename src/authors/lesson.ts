@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import { image } from '../assistants/openAi';
 import generate from '../assistants';
-import { writeYml, writeMd } from './helpers';
+import { writeYml } from './helpers';
 
 export async function lesson(context: string) {
     const start = new Date()
@@ -39,8 +39,6 @@ export async function lesson(context: string) {
         en: enRest,
         fr: frRest
     })
-    // await writeMd(`../content/lessons/${enHanhle}_en_body.md`, enBody)
-    // await writeMd(`../content/lessons/${enHanhle}_fr_body.md`, frBody)
 
     const end = new Date()
     console.log(`Completed the lesson generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)
