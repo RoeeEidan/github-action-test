@@ -76,5 +76,5 @@ export async function challenge(context: string) {
     )
 
     const end = new Date()
-    console.log(`Completed the lesson generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)
+    console.log(`Completed the challenge generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)
 }

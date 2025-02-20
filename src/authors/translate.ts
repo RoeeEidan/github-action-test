@@ -36,7 +36,7 @@ export async function translate(contentType: string, handle: string) {
 
             await writeYml(challengePath, {
                 heroImageUrl,
-                cardImageUrl, 
+                cardImageUrl,
                 ...challenge,
                 multipleChoice,
                 points,
@@ -48,7 +48,7 @@ export async function translate(contentType: string, handle: string) {
             const quizPath = `${__dirname}/../../content/quizzes/${handle}.yml`
             const quiz = await readYml(quizPath)
             if (!quiz) throw new Error(`Quiz with handle ${handle} not found`)
-                const { handle: ____, sourceUrl: _____, correctAnswer: ______, ...frQuiz } = await generate('frenchQuiz', JSON.stringify(quiz))
+            const { handle: ____, sourceUrl: _____, correctAnswer: ______, ...frQuiz } = await generate('frenchQuiz', JSON.stringify(quiz))
             const { handle: ___, sourceUrl, correctAnswer, ...enQuiz } = quiz
             await writeYml(quizPath, {
                 sourceUrl,
@@ -56,6 +56,13 @@ export async function translate(contentType: string, handle: string) {
                 en: enQuiz,
                 fr: frQuiz
             })
+            break
+        case 'chapter':
+            const chapterPath = `${__dirname}/../../content/chapters/${handle}.yml`
+            const currentChapter = await readYml(chapterPath)
+            if (!currentChapter) throw new Error(`Quiz with handle ${handle} not found`)
+            const { handle: _______, ...newChapter } = await generate('chapter', JSON.stringify(currentChapter))
+            await writeYml(chapterPath, newChapter)
             break
         default:
             throw new Error(`Content type ${contentType} is not allowed`)

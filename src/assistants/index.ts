@@ -62,7 +62,7 @@ const challenge = z.object({
 const quiz = z.object({
     handle: z.string(),
     question: z.string(),
-    answers : z.object({
+    answers: z.object({
         a: z.string(),
         b: z.string(),
         c: z.string(),
@@ -71,6 +71,24 @@ const quiz = z.object({
     sourceUrl: z.string(),
     topic: z.string(),
     correctAnswer: z.enum(['a', 'b', 'c', 'd']),
+})
+
+const chapter = z.object({
+    handle: z.string(),
+    en: z.object({
+        heading: z.string(),
+    }),
+    fr: z.object({
+        heading: z.string(),
+    }),
+    tasks: z.array(z.object({
+        type: z.enum(['lesson', 'challenge', 'quiz']),
+        handle: z.string()
+    })),
+    tags: z.array(z.string()).optional().nullable(),
+    locations: z.array(z.string()).optional().nullable(),
+    ownerId: z.number().optional().nullable(),
+    roles: z.array(z.string()).optional().nullable(),
 })
 
 const schema = {
@@ -82,7 +100,8 @@ const schema = {
     frenchQuiz: quiz,
     imagePrompt: z.object({
         prompt: z.string()
-    })
+    }),
+    chapter: chapter
 }
 
 

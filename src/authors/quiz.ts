@@ -13,7 +13,7 @@ export async function quiz(context: string) {
     const frenchQuiz = await generate('frenchQuiz', JSON.stringify(englishQuiz))
 
     const end = new Date()
-    console.log(`Completed the lesson generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)
+    console.log(`Completed the quiz generation process, took ${(end.getTime() - start.getTime()) / 1000}s`)
 
     console.log('IMAGE: N/A')
     const { handle, sourceUrl, correctAnswer, ...en } = englishQuiz
