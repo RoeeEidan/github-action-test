@@ -1,0 +1,22 @@
+en:
+  heading: Engineer's Guide to Climate Change
+fr:
+  heading: Guide des ingénieurs sur le changement climatique
+tasks:
+  - type: lesson
+    handle: engineers-relation-to-climate-change
+  - type: lesson
+    handle: climate-change-and-engineering
+  - type: quiz
+    handle: how-much-do-you-know-about-climate-change
+  - type: quiz
+    handle: how-can-engineers-help
+  - type: challenge
+    handle: change-your-habits
+  - type: challenge
+    handle: make-a-difference
+tags: []
+locations: []
+ownerId: 1
+roles:
+  - engineering
