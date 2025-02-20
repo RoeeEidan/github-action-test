@@ -87,9 +87,10 @@ jobs:
             const pathnames = { lesson: 'climate-class-view', challenge: 'challenge', quiz: 'quiz' };
             const prTitle = `ChatGPT \`${label}\`: \`${contentHandle}\` for Issue #${issueNumber}`;
             const prBody = `Resolves #${issueNumber} _Created by ChatGPT_
+            const hasImage = label === 'lesson' || label === 'challenge';
             
             Generated \`${label}\` with handle: \`${contentHandle}\`
-            [Generate Image](${image})
+            ${hasImage ? `[Generate Image](${image})` : ''}
             
             ---
 
@@ -105,7 +106,7 @@ jobs:
             stageit
             \`\`\`
             ${ 
-              label === 'lesson' || label === 'challenge' 
+              hasImage
                 ? `
                     Uses ChatGPT to re generate the image in this PR
                     \`\`\`bash
