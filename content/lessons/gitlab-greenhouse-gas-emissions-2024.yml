@@ -59,68 +59,68 @@ en:
   popup:
     heading: GitLab’s 2024 GHG Report
 fr:
-  heading: Émissions de Gaz à Effet de Serre de GitLab pour 2024 et notre
-    Engagement pour Réduire notre Impact Climatique
+  heading: Assurez-vous de rester à la page
   body: >-
-    GitLab se lance dans une mission verte! Notre **inventaire des Émissions de
-    Gaz à Effet de Serre (GES) de l'exercice 2024** vous offre un aperçu de
-    l'impact climatique de nos opérations favorables au télétravail. Avec aucune
-    émission de Scope 1 ou Scope 2 à l'horizon, nous sommes concentrés sur la
-    lutte contre ces insaisissables émissions du Scope 3. Celles-ci proviennent
-    principalement des services infonuagiques, du télétravail, des voyages
-    d'affaires et de nos investissements.
+    GitLab est sur une mission verte! Notre **inventaire des émissions de gaz à
+    effet de serre (GES) pour l'année fiscale 24** vous offre un aperçu de
+    l'impact climatique de nos opérations favorables au télétravail. Sans
+    émissions de Scope 1 ou de Scope 2 en jeu, nous nous concentrons sur ces
+    éternelles émissions de Scope 3. Celles-ci proviennent principalement des
+    services en nuage, du travail à distance, des voyages d'affaires et de nos
+    investissements.  
 
 
-    Grâce à une méthodologie de premier ordre du *Comprehensive Environmental
-    Data Archive (CEDA)*, nous avons maintenant une image plus claire de nos
-    émissions. De plus, nous avons élargi notre champ de vision en incluant les
-    émissions provenant des investissements, rendant notre transparence
-    climatique solide comme du roc!
+    Grâce à une méthodologie de pointe élaborée par le *Comprehensive
+    Environmental Data Archive (CEDA)*, nous avons maintenant une image plus
+    claire de nos émissions. De plus, nous avons élargi notre horizon en
+    incluant les émissions provenant des investissements, rendant notre
+    transparence climatique un solide 10/10!  
 
 
-    Dans une nouvelle tournure écologique pour l'exercice 2024, GitLab a lancé
-    sa toute première **évaluation des risques climatiques** pour prévoir
-    comment le changement climatique pourrait impacter notre parcours et mettre
-    en lumière de nouvelles opportunités. Nous avons également avancé dans les
-    partenariats éco-responsables avec notre programme d'engagement des
-    fournisseurs. Cette initiative incite nos principaux fournisseurs à être
-    transparents sur les émissions et les engage dans une action climatique
-    collective (et nous avons de grands projets pour étendre cela en FY25!).
+    Dans un nouveau tournant écologique pour l'année fiscale 24, GitLab a
+    déployé sa première **évaluation des risques climatiques** pour prévoir
+    comment les changements climatiques pourraient affecter notre parcours et
+    mettre en lumière de nouvelles opportunités. Nous avons également fait
+    avancer le cadran sur les partenariats écologiques avec notre programme
+    d'engagement des fournisseurs. Cette initiative pousse nos principaux
+    fournisseurs à être transparents sur leurs émissions et les incite à une
+    action climatique collective (et nous avons de grands plans pour élargir
+    cela en FY25!).  
 
 
-    Du côté des compensations, nous progressons avec l'achat de **8 580 tonnes**
-    de crédits de retrait de carbone. Nos amis de *Trees for Global Benefits*
-    aident dans ce domaine, en utilisant la reforestation pour un monde plus
-    vert et plus propre. Oh, et n'oublions pas, **877 tonnes** de crédits
-    carbone de l'exercice 2023 font désormais partie de notre histoire
-    environnementale.
+    Sur le front de la compensation, nous faisons des progrès avec l'achat de
+    **8 580 tonnes** de crédits de retrait de carbone. Nos amis de *Trees for
+    Global Benefits* nous aident ici, en utilisant la reforestation pour un
+    monde plus vert et propre. Oh, et n'oublions pas, **877 tonnes** de crédits
+    de carbone de l'année fiscale 23 font désormais partie de notre histoire
+    environnementale.  
 
 
-    Vous voulez en savoir plus sur les efforts GES de l'exercice 2024 de GitLab?
-    [En savoir plus ici](https://about.gitlab.com/handbook/).
+    Vous voulez plonger plus profondément dans les efforts GES 24 de GitLab ?
+    [En apprenez plus ici](https://about.gitlab.com/handbook/).  
 
 
-    **Quiz:**
+    **Quiz :** 
 
     Quelle est la principale source des émissions de gaz à effet de serre de
-    GitLab ?
+    GitLab?  
 
-    - A) Utilisation d'énergie sur site de bureau
+    - A) Utilisation énergétique des bureaux sur site  
 
-    - B) Émissions du Scope 3 provenant des services infonuagiques, du
-    télétravail, et des voyages d'affaires
+    - B) Émissions de Scope 3 provenant des services en nuage, du travail à
+    distance et des voyages d'affaires  
 
-    - C) Transport des produits physiques
+    - C) Transport de produits physiques  
 
-    - D) Centres de données alimentés par combustibles fossiles
+    - D) Centres de données alimentés par des combustibles fossiles  
 
 
-    *Réponse correcte: B) Émissions du Scope 3 provenant des services
-    infonuagiques, du télétravail, et des voyages d'affaires*
+    *Réponse correcte : B) Émissions de Scope 3 provenant des services en nuage,
+    du travail à distance et des voyages d'affaires*
   message:
-    heading: Explorez les Émissions de Gaz à Effet de Serre de GitLab pour 2024 🌿
-    body: Le dernier rapport GES de GitLab montre notre chemin vers un avenir plus
-      vert à travers des actions climatiques innovantes et des réductions.
+    heading: Explorez les émissions de gaz à effet de serre 2024 de GitLab 🌿
+    body: Le dernier rapport GES de GitLab montre notre cheminement vers un avenir
+      plus vert grâce à des actions climatiques innovantes et des réductions.
       Plongez dans les détails!
   popup:
     heading: Rapport GES 2024 de GitLab
